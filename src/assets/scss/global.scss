@@ -1,0 +1,98 @@
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+a{text-decoration: none}
+html{ -webkit-tap-highlight-color:transparent;}
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+
+#navbar{
+    max-width: 750px;
+    overflow: hidden;
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -375px;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    .link{
+        float: left;
+        display: block;
+        width: 33.333%;
+        height:95px ;
+        position: relative;
+        -webkit-tap-highlight-color:transparent;
+        span{
+            display: block;
+            position: absolute;
+            left: 140px;top: 25px;
+            width: 30px;height: 30px;
+            border-radius: 50%;
+            background:#e9546b;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+        }
+    }
+
+    .home{
+        position: absolute;
+        left: 100px;top: 25px;
+        width: 50px;height: 50px;
+        background: url("../imgs/icons/home01.png") no-repeat;
+        background-size: cover;
+
+        &.active{
+            background: url("../imgs/icons/home.png") no-repeat;
+            background-size: cover;
+        }
+    }
+    .shopping-basket{
+         position: absolute;
+        left: 100px;top: 25px;
+        width: 50px;height: 50px;
+        background: url("../imgs/icons/shopping-basket.png") no-repeat;
+        background-size: cover;
+        &.active{
+            background: url("../imgs/icons/shopping.png") no-repeat;
+            background-size: cover;
+        }
+    }
+    .mine{
+         position: absolute;
+         left: 100px;top: 25px;
+        width: 50px;height: 50px;
+        background: url("../imgs/icons/mine.png") no-repeat;
+        background-size: cover;
+
+        &.active{
+            background: url("../imgs/icons/mine01.png") no-repeat;
+            background-size: cover;
+        }
+    }
+    .selected{
+        background-position: 0px 0px;
+    }
+}

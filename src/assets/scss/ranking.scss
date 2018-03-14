@@ -1,0 +1,168 @@
+.ranking-page {
+  width: 750px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  img {
+    border: none;
+    vertical-align: top;
+  }
+}
+
+.ranking-banner {
+  width: 750px;
+}
+
+.top-container {
+  width: 660px;
+  margin: 0 auto;
+
+  &.top-last {
+    padding-bottom: 100px;
+  }
+}
+
+.top-item {
+  position: relative;
+  width: 100%;
+  height: 136px;
+  padding: 20px 0;
+  border-bottom: 1px solid #aaa;
+
+  img {
+    width: 100%;
+  }
+
+  .rank {
+    display: none;
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    background: {
+      repeat: no-repeat;
+      size: cover;
+      position: center center;
+    }
+
+    &.rank-01 {
+      background-image: url('../imgs/ranking/icon_top1.png');
+    }
+    &.rank-02 {
+      background-image: url('../imgs/ranking/icon_top2.png');
+    }
+    &.rank-03 {
+      background-image: url('../imgs/ranking/icon_top3.png');
+    }
+    &.rank-04 {
+      background-image: url('../imgs/ranking/icon_top4.png');
+    }
+    &.rank-05 {
+      background-image: url('../imgs/ranking/icon_top5.png');
+    }
+    &.rank-06 {
+      background-image: url('../imgs/ranking/icon_top6.png');
+    }
+    &.rank-07 {
+      background-image: url('../imgs/ranking/icon_top7.png');
+    }
+    &.rank-08 {
+      background-image: url('../imgs/ranking/icon_top8.png');
+    }
+    &.rank-09 {
+      background-image: url('../imgs/ranking/icon_top9.png');
+    }
+  }
+
+  .img {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 48px;
+    width: 136px;
+    height: 136px;
+  }
+
+  .text {
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 136px;
+  }
+
+  .btn-buy {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 225px;
+    height: 136px;
+    background: {
+      image: url('../imgs/ranking/btn_buy.png');
+      repeat: no-repeat;
+      size: cover;
+      position: center center;
+    }
+  }
+}
+
+.top3 .top-item {
+  position: relative;
+  width: 100%;
+  height: 179px;
+
+  .rank {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 33px;
+    width: 23px;
+    height: 26px;
+    margin-top: -13px;
+  }
+
+  .img {
+    position: absolute;
+    top: 20px;
+    left: 103px;
+    width: 206px;
+    height: 179px;
+  }
+
+  .text {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 350px;
+    height: 120px;
+  }
+
+  .btn-buy {
+    display: block;
+    position: absolute;
+    top: 140px;
+    right: 94px;
+    width: 160px;
+    height: 46px;
+    background: {
+      repeat: no-repeat;
+      size: cover;
+      position: center center;
+    }
+  }
+
+  &:nth-of-type(1) .btn-buy {
+    background-image: url('../imgs/ranking/btn_buy_01.png');
+  }
+  &:nth-of-type(2) .btn-buy {
+    background-image: url('../imgs/ranking/btn_buy_02.png');
+  }
+  &:nth-of-type(3) .btn-buy {
+    background-image: url('../imgs/ranking/btn_buy_03.png');
+  }
+}
+
+.top-last .top-item {
+  .text {
+    left: 184px;
+  }
+}

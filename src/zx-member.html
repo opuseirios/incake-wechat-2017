@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<!-- flexible.js 建议做内联处理，请勿移动位置 -->
+	<script src="assets/plugins/lib-flexible/flexible.js"></script>
+	<link rel="apple-touch-icon" href="favicon.png">
+	<link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+
+	<title>INCAKE | 会员绑定</title>
+	<link rel="stylesheet" href="assets/plugins/normalize/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+	<link rel="stylesheet" href="assets/css/zx-member.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+	<!-- login page begin -->
+	<div class="login-page">
+		<!-- page wrapper begin -->
+		<div class="page-wrapper">
+			<div class="page-container">
+				<ul class="form-wrapper register-form">
+					<li>
+						<input type="text" class="txt-mobile" placeholder="请输入会员卡号">
+					</li>
+					<li class="clearfix">
+						<input type="text" class="txt-imgcode" placeholder="请输入会员卡号密码">
+					</li>
+                    <li class="hint">
+                        <p>此卡已被绑定，有疑问？<a href="tel:400－921-5757">400－921-5757</a></p>
+                        <p>卡号或密码输入有误</p>
+                    </li>
+					<li>
+						<a href="javascript:;" class="btn btn-register">确认绑定</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- page wrapper end -->
+
+        <!-- shade begin-->
+		<div class="shade">
+			<div class="shade-message">
+				<div>
+					<p>恭喜您！绑卡成功，快去买蛋糕吧~</p>
+				</div>
+				<a href="javascript:;">去蛋糕管</a>
+			</div>
+		</div>
+		<!-- shade end-->
+	</div>
+	<!-- login page end -->
+	<!-- loading scripts begin -->
+	<script src="assets/plugins/LABjs/LAB.min.js"></script>
+	<script>
+		$LAB
+			.script('assets/plugins/artTemplate/dist/template.js').wait()
+			.script('assets/plugins/jquery/jquery-3.1.1.min.js').wait()
+			.script('assets/js/login.js');
+	</script>
+	<!-- loading scripts end -->
+</body>
+
+</html>

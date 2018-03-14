@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <!-- flexible.js 建议做内联处理，请勿移动位置 -->
+    <script src="assets/plugins/lib-flexible/flexible.js"></script>
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <title>积分兑换 | 首页</title>
+    <link rel="stylesheet" href="assets/plugins/normalize/normalize.css" />
+    <link rel="stylesheet" href="assets/plugins/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/exchangeIndex.css" />
+</head>
+<body>
+<!--exchangeIndex page begin-->
+<div class="page exchangeIndex-page" id="exchangeIndexPage">
+    <div class="page-container">
+        
+        <!--banner begin-->
+        <div class="exchangeIndex-banner">
+            <img src="assets/imgs/exchangeIndex/banner.png" alt="">
+        </div>
+        <!--banner end-->
+
+        <!-- body begin -->
+        <div class="exchangeIndex-container">
+            <div class="announce clearfix">
+                <a href="javascript:;"><img src="assets/imgs/exchangeIndex/announce1.png" alt=""></a>
+                <a href="javascript:;"><img src="assets/imgs/exchangeIndex/announce2.png" alt=""></a>
+                <a href="javascript:;"><img src="assets/imgs/exchangeIndex/announce3.png" alt=""></a>
+                <a href="javascript:;"><img src="assets/imgs/exchangeIndex/announce4.png" alt=""></a>
+            </div>
+            <div class="section brands">
+                <div class="section-title">
+                    大牌专区
+                </div>
+                <div class="section-content">
+                    <div class="section-banner">
+                        <a href="javascript:;"><img src="assets/imgs/exchangeIndex/brand1.png" alt=""></a>
+                    </div>
+                    <div class="imgs clearfix">
+                        <div class="raffaello">
+                            <a href="javascript:;"> <img src="assets/imgs/exchangeIndex/brand2.png" alt=""></a>
+                        </div>
+                        <div class="netease">
+                            <a href="javascript:;"><img src="assets/imgs/exchangeIndex/brand3.png" alt=""></a>
+                        </div>
+                        <div class="dior">
+                            <a href="javascript:;">
+                                <img src="assets/imgs/exchangeIndex/brand4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section yanzhi">
+                <div class="section-title">
+                    颜值专区
+                </div>
+                <div class="section-content">
+                    <div class="section-banner">
+                        <a href="javascript:;">
+                            <img src="assets/imgs/exchangeIndex/yanzhibg.png" alt="">
+                        </a>
+                    </div>
+                    <div class="cakeList" id="yanzhiCakes">
+
+                    </div>
+                    <script id="yzCakes" type="text/html">
+                        {{if list.length>0}}
+                        <ul class="cakes clearfix">
+                            {{each list as item i}}
+                            <li class="cake">
+                                <a href="{{item.link}}" class="img">
+                                    <img src="{{item.img}}" alt="">
+                                </a>
+                                <div class="name">
+                                    {{item.name}}
+                                </div>
+                                <a href="{{item.link}}" class="convert">去兑换</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </script>
+                </div>
+            </div>
+            <div class="section shejian">
+                <div class="section-title">
+                    舌尖种草
+                </div>
+                <div class="section-content">
+                    <div class="section-banner">
+                        <a href="javascript:;"><img src="assets/imgs/exchangeIndex/shejianbg.png" alt=""></a>
+                    </div>
+                    <div class="cakeList" id="shejianCakes">
+
+                    </div>
+                    <script id="sjCakes" type="text/html">
+                        {{if list.length>0}}
+                        <ul class="cakes clearfix">
+                            {{each list as item i}}
+                            <li class="cake">
+                                <a href="{{item.link}}" class="img">
+                                    <img src="{{item.img}}" alt="">
+                                </a>
+                                <div class="name">
+                                    {{item.name}}
+                                </div>
+                                <a href="{{item.link}}" class="convert">去兑换</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </script>
+                </div>
+            </div>
+            <div class="section powerUp">
+                <div class="section-title">
+                    能量UP
+                </div>
+                <div class="section-content">
+                    <div class="section-banner">
+                        <a href="javascript:;">
+                            <img src="assets/imgs/exchangeIndex/nengliangbg.png" alt="">
+                        </a>
+                    </div>
+                    <div class="cakeList" id="powerUP">
+
+                    </div>
+                    <script id="powerUpCakes" type="text/html">
+                        {{if list.length>0}}
+                        <ul class="cakes clearfix">
+                            {{each list as item i}}
+                            <li class="cake">
+                                <a href="{{item.link}}" class="img">
+                                    <img src="{{item.img}}" alt="">
+                                </a>
+                                <div class="name">
+                                    {{item.name}}
+                                </div>
+                                <a href="{{item.link}}" class="convert">去兑换</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </script>
+                </div>
+            </div>
+            <div class="footBanner">
+            </div>
+        </div>
+        <!-- body end -->
+
+        <!--footer begin-->
+        <div class="exchangeIndex-footer">
+            <div class="footer">
+                <div class="links">
+                    <a href="javascript:;">店铺主页</a>|
+                    <a href="javascript:;">会员中心</a>|
+                    <a href="javascript:;">关注我们</a>|
+                    <a href="javascript:;">店铺信息</a>
+                </div>
+            </div>
+        </div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+<script src="assets/plugins/LABjs/LAB.min.js"></script>
+<script>
+    $LAB
+        .script('assets/plugins/jquery/jquery-3.1.1.min.js').wait()
+        .script('assets/plugins/artTemplate/dist/template.js').wait()
+        .script('assets/plugins/underscore/underscore-min.js').wait()
+        .script('assets/js/common.js').wait()
+        .script('assets/js/exchangeIndex.js');
+</script>
+</html>

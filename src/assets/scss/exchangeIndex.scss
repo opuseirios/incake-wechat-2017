@@ -1,0 +1,173 @@
+ul, li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+.exchangeIndex-page{
+  width: 100%;
+  background: #fcddc9;
+}
+.exchangeIndex-container{
+  width: 100%;
+  max-width: 750px;
+  background: url("../imgs/exchangeIndex/cloud.png") no-repeat;
+  background-size: 100%;
+  background-position: 0 -280px;
+  .announce{
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 670px;
+    a{
+      display: block;
+      float: left;
+      width: 328px;
+      height: 204px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      &:nth-of-type(1){
+        margin-right: 14px;
+        margin-bottom: 15px;
+      }
+      &:nth-of-type(2){
+        margin-bottom: 15px;
+      }
+      &:nth-of-type(3){
+        margin-right: 14px;
+      }
+    }
+  }
+  .section{
+    margin-left: 40px;
+    width: 670px;
+    .section-title{
+      margin: 60px auto 50px;
+      width: 260px;
+      height: 60px;
+      background: url("../imgs/exchangeIndex/titleBg.png") no-repeat;
+      background-size: 100%;
+      color: #fff;
+      line-height: 60px;
+      font-size: 28px;
+      text-align: center;
+    }
+    .section-content{
+      width: 100%;
+      .section-banner{
+        height: 270px;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .cakeList{
+        width: 100%;
+        ul.cakes{
+          width: 100%;
+          li.cake{
+            margin-top: 25px;
+            margin-right: 12px;
+            width: 215px;
+            float: left;
+            .img{
+              display: block;
+              width: 100%;
+              height: 215px;
+            }
+            .name{
+              line-height: 50px;
+              height: 50px;
+              font-size: 20px;
+              color: #333;
+              text-align: center;
+            }
+            .convert{
+              width: 120px;
+              display: block;
+              height: 36px;
+              margin: 0 auto;
+              text-align: center;
+              color: #fff;
+              line-height: 36px;
+              font-size: 20px;
+              background: #f94f42;
+              border-radius: 18px;
+            }
+            &:nth-of-type(3n){
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    &.powerUp{
+      margin-bottom: 80px;
+    }
+  }
+  .brands{
+    .imgs{
+      margin-top: 12px;
+
+      .raffaello{
+        float: left;
+        width: 328px;
+        height: 270px;
+        margin-right: 14px;
+      }
+      .netease{
+        float: right;
+        width: 328px;
+        height: 128px;
+        margin-bottom: 12px;
+      }
+      .dior{
+        float: right;
+        width: 328px;
+        height: 130px;
+      }
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .footBanner{
+    width: 100%;
+    height: 65px;
+    background: url("../imgs/exchangeIndex/footer.png");
+    background-size: 100%  ;
+  }
+}
+.exchangeIndex-footer{
+  width: 100%;
+  max-width: 750px;
+  height: 160px;
+  background: #fff;
+  .footer{
+    margin: 0 40px;
+    padding-top: 40px;
+    .links{
+      width: 610px;
+      margin-left: 60px;
+      a{
+        display: inline-block;
+        padding: 20px;
+        color: #909090;
+        box-sizing: border-box;
+        font-size: 22px;
+      }
+    }
+  }
+}

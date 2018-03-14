@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!--开启页面对webapp程序的支持-->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<!--"添加到主屏幕后，全屏显示-->
+	<meta content="yes" name="apple-touch-fullscreen">
+	<!--不识别页面中出现的电话号码和邮箱-->
+	<meta content="telephone=no,email=no" name="format-detection">
+	<!-- flexible.js 建议做内联处理，请勿移动位置 -->
+	<script src="assets/plugins/lib-flexible/flexible.js"></script>
+	<!--在用户把网页存为书签时，在手机HOME界面创建应用程序样式的图标-->
+	<link rel="apple-touch-icon" href="favicon.png">
+	<!--在用户把网页存为书签时，在手机HOME界面创建应用程序样式的图标-->
+	<link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+	<!--以上部分基本是固定的，不需要改变-->
+	<title>INCAKE | 订单详情</title>
+	<!--全局样式-->
+	<link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+	<!--页面样式-->
+	<link rel="stylesheet" type="text/css" href="assets/css/order-detail.css" />
+	<!--页面的图标-->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+	<div class="order-detail-layout">
+		<div class="gather">
+			<i class="location">
+				<img src="assets/imgs/order-detail/location.png" alt="">
+			</i>
+			<p><span>特朗普  &nbsp;&nbsp; &nbsp;13904112571</span> </p>
+			<p>地址: &nbsp;&nbsp;<span>发发火发发火发发火发发火发发火发发火发
+发发火</span> </p>
+		</div>
+		<div class="order-me">
+			<ul class="surprised" id="surprised-ul"></ul>
+			<script id="tplSurprise" type="text/html">
+				{{each list as item i}}
+				<li>
+					<a href="{{item.link}}"><img src="{{item.img}}"/></a>
+					<p><span>{{item.name.cn}}</span><span>{{item.name.en}}</span><span>{{item.cost}}</span></p>
+					<p>规格：<span>{{item.cost}}</span>/<span>{{item.poundage}}</span>磅</p>
+					<p>数量：<span>1</span></p>
+					<p>
+						{{each item.attrs as attr}}
+						<span>{{attr}}&nbsp;</span> {{/each}}
+					</p>
+				</li>
+				{{/each}}
+			</script>
+		</div>
+		<div class="order-sum">
+			<p>总额 <span>¥189</span></p>
+			<p>-优惠总额 <span>¥7</span></p>
+			<p class="finalPay">实付款 <span>¥182</span></p>
+		</div>
+		<div class="order-center">
+			<ul>
+				<li>生日牌 <span>无</span> </li>
+				<li>发票信息 <span>无</span> </li>
+				<li>贺卡 <span>无</span> </li>
+				<li>订单备注 <span>无</span> </li>
+			</ul>
+		</div>
+		<div class="order-info">
+			<p>订单编号: <span>SHP0919713</span> </p>
+			<p>配送时间: <span>2017-09-08  11:11</span> </p>
+			<p>下单时间: <span>2017-06-02</span> <span>10:52</span></p>
+			<p>收货时间: <span>2017-06-03</span> <span>15:30~16:30</span></p>
+		</div>
+		<div class="order-btn">
+			<a href="javascript:;" class="connect">联系客服</a>
+			<a href="javascript:;" class="delete">删除订单</a>
+			<a href="javascript:;" class="confirm">确认支付</a>
+		</div>
+	</div>
+
+	<script src="assets/plugins/LABjs/LAB.min.js"></script>
+	<script>
+		$LAB
+			.script('assets/plugins/artTemplate/dist/template.js').wait()
+			.script('assets/plugins/jquery/jquery-3.1.1.min.js').wait()
+			.script('assets/js/order-detail.js');
+	</script>
+</body>
+
+</html>

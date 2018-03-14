@@ -1,0 +1,268 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.login-page,
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+.pwdreset-wrapper {
+	background-color: #fff;
+}
+
+.page-header {
+    width: 750px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.page-container {
+    width: 100%;
+    background-color: #fff;
+    .form-wrapper {
+        width: 590px;
+    	margin: 0 auto;
+    	list-style-type: none;
+    	padding: 10px 0;
+    	&.register-form{
+    		padding-top: 50px;
+    	}
+        li {
+            position: relative;
+            width: 100%;
+            height: 80px;
+            margin-top: 30px;
+            color: #505050;
+            &.no-margin {
+            	margin-top: 20px;
+            }
+            .forget{
+                margin-left: 450px;
+            }
+            .slider {
+            position: absolute;
+            width: 100%;
+            height: 90px;
+            box-shadow: 0 0 3px #999;
+            background-color: #ddd;
+            top: 50%;
+            left: 0;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        .label {
+            background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(.4, #4d4d4d), color-stop(.5, white), color-stop(.6, #4d4d4d), color-stop(1, #4d4d4d));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: slidetounlock 3s infinite;
+            -webkit-text-size-adjust: none;
+            line-height: 90px;
+            height: 90px;
+            text-align: center;
+            font-size: 24px; /* px */
+            width: 100%;
+            color: #aaa;
+        }
+        .button {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background-color: #fff;
+            transition: left 0s;
+            -webkit-transition: left 0s;
+            background: url('../imgs/login/buttonbggary.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .active{
+            background: url('../imgs/login/buttonbg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 15px 1px #e9546a;/*no*/
+        }
+        .button-on {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background-color: #fff;
+            transition: left 1s;
+            -webkit-transition: left .5s;
+        }
+        .track {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            overflow: hidden;
+            transition: width 0s;
+            -webkit-transition: width 0s;
+        }
+        .track-on {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            overflow: hidden;
+            transition: width 1s;
+            -webkit-transition: width .5s;
+            background: #fbdfe4;
+        }
+        .bg-green {
+            line-height: 90px;
+            height: 90px;
+            text-align: center;
+            font-size: 24px;/*px*/
+            background-color: #bacf57;
+        }
+            input {
+            	width: 100%;
+            	height: 80px;
+            	line-height: 80px;
+            	text-indent: 28px;
+            	border: none;
+            	-webkit-appearance: none;
+            	outline: none;
+            	border-bottom: 1px solid #dcdcdc; /* no */
+            	font-size: 30px; /* px */
+            	&:focus {
+            		border-bottom-color: #e9546b;
+            	}
+            	&.txt-imgcode,
+	            &.txt-msgcode {
+	            	float: left;
+	            	width: 340px;
+	            }
+            }
+            a {
+            	display: inline-block;
+            	font-size: 24px; /* px */
+            	color: #3c78c8;
+            	line-height: 80px;
+            	&.forget-password,
+            	&.fast-login,
+            	&.account-login {
+            		float: right;
+            	}
+            	&.voice-password {
+            		text-decoration: underline;
+            	}
+            	&.btn {
+            		width: 100%;
+            		height: 80px;
+            		color: #fff;
+            		text-align: center;
+            		font-size: 30px; /* px */
+            		border-radius: 5px;
+            	}
+            	&.btn-login,
+            	&.btn-register,
+            	&.btn-nextstep {
+            		background-color: #e9546b;
+            	}
+            	&.btn-enroll{
+            	    color: #fff;
+            	    background-color: #ed7689;
+            	}
+            	&.btn-reg {
+            		background-color: #f8cbd2;
+            	}
+            	&.btn-msgcode {
+            		float: right;
+					width: 240px;
+					height: 80px;
+					text-align: center;
+					color: #fff;
+					background-color: #caa5a5;
+					border-radius: 5px;
+            	}
+	            &.imgcode {
+	            	float: right;
+	            	width: 238px;
+	            	height: 78px;
+	            	border: 1px solid #dcdcdc;
+	            	overflow: hidden;
+	            	img {
+	            		width: 100%;
+	            	}
+	            }
+            }
+            span {
+            	display: inline-block;
+            	font-size: 24px; /* px */
+            	color: #323232;
+            	line-height: 80px;
+            	&.auto-login {
+            		float: left;
+            		padding-left: 56px;
+            		cursor: pointer;
+            		background: {
+            			image: url('../imgs/icons/icon_rect_ckbox.png');
+            			repeat: no-repeat;
+            			size: 40px 40px;
+            			position: left center;
+            		}
+            		&.checked {
+            			background-image: url('../imgs/icons/icon_rect_ckbox_checked.png');
+            		}
+            	}
+            	&.tip,
+            	&.account-login {
+            		float: right;
+            	}
+            }
+        }
+
+    }
+}
+
+.page-footer {
+	width: 100%;
+	border-top: 1px solid #303242; /* no */
+	.wechat-login {
+		width: 90px;
+		margin: 0 auto;
+		padding-top: 30px;
+		.img {
+			display: block;
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			overflow: hidden;
+			img {
+				width: 100%;
+			}
+		}
+		.text {
+			padding-top: 16px;
+			font-size: 20px; /* px */
+			text-align: center;
+			color: #303242;
+		}
+	}
+}
+@keyframes slidetounlock {
+  0% {
+    background-position: -2.666667rem 0;
+  }
+
+  100% {
+    background-position: 2.666667rem 0;
+  }
+}

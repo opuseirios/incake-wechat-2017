@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>INCAKE | 少女节</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/plugins/normalize/normalize.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/maiden-festival.css" />
+    <!-- flexible.js 建议做内联处理，请勿移动位置 -->
+    <script src="assets/plugins/lib-flexible/flexible.js"></script>
+</head>
+<body>
+<div class="page maiden-page" id="maidenPage">
+    <div class="page-container">
+        <!--banner begin-->
+        <div class="maiden-banner">
+            <div class="banner">
+                <img src="assets/imgs/maiden-festival/banner.png" alt="">
+            </div>
+            <div class="info">
+                <img src="assets/imgs/maiden-festival/info.png" alt="">
+            </div>
+        </div>
+        <!-- banner end -->
+
+        <!--container begin-->
+        <div class="maiden-container">
+
+            <!-- 产品 begin -->
+            <div class="cdCategory" id="cdCategory">
+
+            </div>
+            <a href="javascript:;" class="toMall">
+                <img src="assets/imgs/maiden-festival/linkToCake.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- rule begin -->
+    <div class="maiden-rule">
+        <dl>
+            <dt>活动规则</dt>
+            <dd>1.活动时间：03月06日-03月12日</dd>
+            <dd>2.配送时间：03月07日-03月13日</dd>
+            <dd>3.赠品INBOX将于3月15日后陆续发出（口味随机），将单独配送</dd>
+            <dd>4.可配送城市：上海、北京、福州、苏州、厦门、南京、杭州、宁波、青岛、扬州、镇江、无锡</dd>
+            <dd>5.本活动不可食用代金卡、优惠券，不与其他优惠同享</dd>
+        </dl>
+    </div>
+    <!-- 产品列表模板 begin -->
+    <script id="tplList" type="text/html">
+           {{if list.length}}
+            <div class="head">
+                <img src="assets/imgs/maiden-festival/coudan-head.png" alt="">
+            </div>
+            <ul id="cakes" class="clearfix">
+                {{each list as item i}}
+                <li class="cake">
+                    <a class="img" href="{{item.link}}">
+                        <img src="{{item.img}}">
+                    </a>
+                    <div class="name">
+                        <p class="cn">{{item.name.cn}}</p>
+                        <p class="en">{{item.name.en}}</p>
+                    </div>
+                    <div class="price">
+                        {{if item.box}}
+                        <p class="now">¥<span class="nowPrice">{{item.currentPrice}}</span>/<span class="num">{{item.box}}</span></p>
+                        <p class="old">
+                            ¥<span class="oldPrice">{{item.originalPrice}}</span>/<span class="num">{{item.box}}</span>
+                        </p>
+                        {{else}}
+                        <p class="now">¥<span class="nowPrice">{{item.currentPrice}}</span>/<span class="num">{{item.piece}}</span></p>
+                        <p class="old">
+                            ¥<span class="oldPrice">{{item.originalPrice}}</span>/<span class="num">{{item.piece}}</span>
+                        </p>
+                        {{/if}}
+                    </div>
+                    <a href="{{item.link}}" class="buyNow">立即购买</a>
+                </li>
+                {{/each}}
+            </ul>
+            <div class="rightSide">
+                <img src="assets/imgs/maiden-festival/right-side.png" alt="">
+            </div>
+
+        {{/if}}
+    </script>
+</div>
+<script src="assets/plugins/LABjs/LAB.min.js"></script>
+<script>
+    $LAB
+        .script('assets/plugins/jquery/jquery-3.1.1.min.js').wait()
+        .script('assets/plugins/artTemplate/dist/template.js').wait()
+        .script('assets/plugins/underscore/underscore-min.js').wait()
+        .script('assets/js/common.js').wait()
+        .script('assets/js/maiden-festival.js');
+</script>
+</body>
+</html>

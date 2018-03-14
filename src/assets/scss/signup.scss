@@ -1,0 +1,228 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.signup-page {
+  width: 750px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  background-color: #fff5e4;
+
+  img {
+    width: 100%;
+    border: none;
+    vertical-align: top;
+  }
+}
+
+.banner {
+  width: 100%;
+}
+
+.signup-form {
+  width: 694px;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  li {
+    width: 690px;
+    height: 86px;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #fffbf5;
+    overflow: hidden;
+
+    &.input-group {
+      border-color: #dbb57f;
+    }
+
+    a, input {
+      display: inline-block;
+      width: 690px;
+      height: 86px;
+      line-height: 86px;
+      font-size: 30px; /* px */
+      background-color: inherit;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      color: #333;
+      text-indent: 1em;
+    }
+
+    &.action-slider {
+      position: relative;
+    }
+
+    .slider {
+      position: absolute;
+      width: 100%;
+      height: 90px;
+      box-shadow: 0 0 3px #999;
+      background-color: #ddd;
+      top: 50%;
+      left: 0;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+    .label {
+      background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(.4, #4d4d4d), color-stop(.5, white), color-stop(.6, #4d4d4d), color-stop(1, #4d4d4d));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: slidetounlock 3s infinite;
+      -webkit-text-size-adjust: none;
+      line-height: 90px;
+      height: 90px;
+      text-align: center;
+      font-size: 24px; /* px */
+      width: 100%;
+      color: #aaa;
+    }
+    .button {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 90px;
+      height: 90px;
+      background-color: #fff;
+      transition: left 0s;
+      -webkit-transition: left 0s;
+      background: url('../imgs/login/buttonbggary.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .active{
+      background: url('../imgs/login/buttonbg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0 0 15px 1px #e9546a;/*no*/
+    }
+    .button-on {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 90px;
+      height: 90px;
+      background-color: #fff;
+      transition: left 1s;
+      -webkit-transition: left .5s;
+    }
+    .track {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0;
+      overflow: hidden;
+      transition: width 0s;
+      -webkit-transition: width 0s;
+    }
+    .track-on {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0;
+      overflow: hidden;
+      transition: width 1s;
+      -webkit-transition: width .5s;
+      background: #fbdfe4;
+    }
+    .bg-green {
+      line-height: 90px;
+      height: 90px;
+      text-align: center;
+      font-size: 24px;/*px*/
+      background-color: #bacf57;
+    }
+
+    .btn-confirm {
+      font-size: 40px; /* px */
+      background-color: #f1454a;
+      color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      transition: background-color .2s ease-in-out;
+
+      &:active {
+        background-color: #caa36b;
+      }
+    }
+  }
+}
+
+.tip {
+  font-size: 26px; /* px */
+  color: #caa36b;
+  text-align: center;
+  line-height: 40px;
+}
+
+.flavor {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #f1454a;
+  text-align: center;
+  line-height: 30px; /* px */
+}
+
+.success-tip {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+
+  .success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 580px;
+    transform: translate(-50%, -50%);
+
+    img {
+      width: 100%;
+      border: none;
+      vertical-align: top;
+    }
+
+    .btn-ok {
+      display: block;
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      width: 312px;
+      height: 86px;
+      line-height: 86px;
+      transform: translateX(-50%);
+      font-size: 40px; /* px */
+      background-color: #f1454a;
+      color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      transition: background-color .2s ease-in-out;
+
+      &:active {
+        background-color: #caa36b;
+      }
+    }
+  }
+}
+
+@keyframes slidetounlock {
+  0% {
+    background-position: -2.666667rem 0;
+  }
+
+  100% {
+    background-position: 2.666667rem 0;
+  }
+}
