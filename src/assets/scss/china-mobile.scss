@@ -1,0 +1,312 @@
+ul,li{
+  list-style:none;
+}
+
+img{
+  border: none;
+  vertical-align: top;
+}
+input{
+  border: none;
+  &::-webkit-input-placeholder{
+    color: #c6c6c6;
+  }
+  &::-moz-placeholder{
+    color: #c6c6c6;
+  }
+  &:-ms-input-placeholder{
+    color: #c6c6c6;
+  }
+}
+.china-mobile-page{
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  .coupon-header{
+    width: 100%;
+    background: {
+      image: url("../imgs/china-mobile/bg.png");
+      repeat: no-repeat;
+      size: 100% ;
+      color: #dce3bb;
+    };
+  }
+  .head-body{
+    width: 670px;
+    margin: 0 auto;
+    padding-top: 840px;
+    font-size: 26px;
+    padding-bottom: 60px;
+    .tel{
+      margin: 0 auto;
+      width: 580px;
+      height: 80px;
+      input{
+        width: 100%;
+        height: 100%;
+        line-height: 80px;
+        border-radius: 40px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        color: #333;
+        background: #f6ece8;
+      }
+    }
+    div.message{
+      width: 580px;
+      margin: 0 auto;
+      height: 80px;
+      input{
+        box-sizing: border-box;
+        line-height: 80px;
+        padding-left: 40px;
+        border-radius: 40px;
+        width: 100%;
+        //margin-right: 20px;
+        color: #333;
+        background: #f6ece8;
+      }
+      #sendMessage{
+        width: 230px;
+      }
+      .send{
+        background: #f6ece8;
+        color: #ef9aa0;
+      }
+    }
+    #receiveCoupon{
+      width: 290px;
+      margin: 70px auto;
+    }
+    .btn{
+      display: block;
+      border-radius: 40px;
+      color: #fff;
+      text-align: center;
+      line-height: 80px;
+      font-size: 26px;
+      background: #fa7644;
+      box-shadow: #fa7644 0 10px 30px 6px;
+    }
+
+    /*滑动解锁*/
+    #maskAction{
+      position: relative;
+      width: 579px;
+      margin: 50px auto 30px;
+      height: 80px;
+      line-height: 80px;
+      .slider{
+        position: absolute;
+        width: 100%;
+        height: 80px;
+        box-shadow: 0 0 3px #dce3bb;
+        border-radius: 40px;
+        background: #f6ece8;
+        top: 50%;
+        left: 0;
+        right: 20px;
+        transform: translateY(-60%);
+        .label{
+          background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(.4, #4d4d4d), color-stop(.5, white), color-stop(.6, #4d4d4d), color-stop(1, #4d4d4d));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -webkit-animation: slidetounlock 3s infinite;
+          -webkit-text-size-adjust: none;
+          width: 100%;
+          font-size: 24px;
+          height: 80px;
+          line-height: 80px;
+          text-align: center;
+        }
+        .button{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          transition: left 0s;
+          background: url("../imgs/china-mobile/buttonbggary.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        .active{
+          background: url("../imgs/china-mobile/buttonbg.png") no-repeat;
+          background-size: 100% 100%;
+        }
+        .button-on {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 80px;
+          height: 80px;
+          background-color: #fff;
+          transition: left 1s;
+          -webkit-transition: left .5s;
+        }
+        .track{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 0;
+          overflow: hidden;
+          transition: width 0s;
+          -webkit-transition: width 0s;
+        }
+        .track-on {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 0;
+          overflow: hidden;
+          transition: width 1s;
+          -webkit-transition: width .5s;
+          background: #dce3bb;
+        }
+        .bg-green {
+          line-height: 80px;
+          height: 80px;
+          text-align: center;
+          font-size: 24px;/*px*/
+          background-color: #b8c288;
+          border-radius: 40px 0 0 40px;
+          position: relative;
+          color: #fff;
+        }
+      }
+    }
+  }
+  @keyframes slidetounlock {
+    0% {
+      background-position: -2.666667rem 0;
+    }
+
+    100% {
+      background-position: 2.666667rem 0;
+    }
+  }
+
+  /*券码规则*/
+  .coupon-detail{
+    width: 100%;
+    background: #f9fef2;
+    padding-top: 25px;
+    /*二维码*/
+    .qrCode{
+      width: 100%;
+      height: 180px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      position: relative;
+      .qrCode-img{
+        position: absolute;
+        top: 0;
+        left: 25%;
+        background: #fff;
+        img{
+          padding: 10px;
+          width: 155px;
+          height: 155px;
+        }
+      }
+      .txt{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 32%;
+        img{
+          width: 190px;
+          height: 64px;
+        }
+      }
+    }
+    .coupon-section{
+      margin: 0px 30px;
+      color: #cc6d49;
+      .title{
+        font-size: 28px;
+        text-align: center;
+        line-height: 120px;
+        position: relative;
+        &::after,&::before{
+          content: '';
+          width: 135px;
+          display: inline-block;
+          position: absolute;
+          height: 2px;
+          background: #cc6d49;
+          top: 50%;
+          margin-top: -1px;
+        }
+        &::before{
+          left: 60px;
+        }
+        &::after{
+          right: 60px;
+        }
+      }
+      .content{
+        box-sizing: border-box;
+        font-size: 24px;
+        line-height: 50px;
+        li{
+          padding-right: 25px;
+          &:last-child{
+            padding-right: 0;
+          }
+        }
+      }
+    }
+    .coupon-rules{
+      margin-top: 20px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+/*领取券码*/
+.receiveSuccess{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.5);
+  .success{
+    position: absolute;
+    width: 500px;
+    height: 335px;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    img{
+      margin: 50px auto 20px;
+      width: 90px;
+      height: 76px;
+    }
+    p{
+      color: #000;
+      font-size: 26px;
+      line-height: 26px;
+    }
+    .msg{
+      width: 410px;
+      margin: 45px auto 60px;
+      p{
+        font-size: 20px;
+        line-height: 40px;
+        color: #000;
+        text-align: left;
+      }
+    }
+  }
+}
+
