@@ -276,23 +276,46 @@
 		$address_shade.animate({"top":0});
 	});
 
-	// 修改地址
+	// 修改地址 modified
 	$amend.click(function(event){
 		event.preventDefault();
 		event.stopPropagation();
+		$(document).scrollTop(0);
 		$add_layout.animate({"top":0});
+		touchmove();
 	});
 
+	// modified
 	$add_address.click(function(event){
 		event.preventDefault();
 		event.stopPropagation();
+		$(document).scrollTop(0);
 		$add_layout.animate({"top":0});
+		touchmove();
 	});
 
-	// 提交
+	// 提交 modified
 	$foot.click(function(){
 		$address_shade.animate({"top":"-200%"});
 		$add_layout.animate({"top":"-200%"});
+		removeTouchmove();
+	});
+
+	// added
+	var allowAddressClose = false;
+	$add_layout.on('focus', 'input', function() {
+		allowAddressClose = false;
+		setTimeout(function() {
+			var scrollHeight = $add_layout.prop('scrollHeight');
+			$add_layout.scrollTop(scrollHeight, 200);
+		}, 200);
+	}).on('blur', 'input', function(e) {
+		allowAddressClose = true;
+		setTimeout(function() {
+			if (allowAddressClose) {
+				$(document).scrollTop(0);
+			}
+		}, 200);
 	});
 
 	$("#address-div ul").on("click","li",function(){
