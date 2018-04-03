@@ -297,14 +297,47 @@ input{
       font-size: 26px;
       line-height: 26px;
     }
-    .msg{
+    .coupon{
       width: 410px;
-      margin: 45px auto 60px;
-      p{
-        font-size: 20px;
+      margin: 60px auto;
+      height: 40px;
+      line-height: 40px;
+      position: relative;
+      .copyMsg{
+        display: none;
+        white-space: nowrap;
+        position: absolute;
+        color: #fff;
+        background: rgba(0,0,0,.7);
+        height: 20px;
+        line-height: 20px;
+        top: -45px;
+        text-align: center;
+        border-radius: 10px;
+        padding:10px 20px;
+        left: 50%;
+        font-size: 20px;/*px*/
+        transform: translateX(-50%);
+      }
+      #couponCode{
+        width: 280px;
+        height: 40px;
         line-height: 40px;
-        color: #000;
-        text-align: left;
+        padding-left: 20px;
+        border-radius: 20px 0 0 20px;
+        font-size: 20px;/*px*/
+        color: #333;
+        background: #fbe8e0;
+      }
+      #copyCoupon{
+        display: inline-block;
+        width: 110px;
+        margin-left: -10px;
+        height: 40px;
+        border-radius: 0 20px 20px 0;
+        color: #fefefe;
+        background: #fa7644;
+        font-size: 22px;/*px*/
       }
     }
   }

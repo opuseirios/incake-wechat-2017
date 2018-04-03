@@ -9,12 +9,11 @@ img {
 
 .szone-page {
   width: 100%;
-  background-color: #bb1c22;
+  background-color: #f2fcfe;
 }
 
 .szone-banner {
   width: 750px;
-
   img {
     width: 100%;
   }
@@ -23,30 +22,58 @@ img {
 .szone-container {
   position: relative;
   width: 750px;
-
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 750px;
-    height: 100%;
-    content: '';
-    background: {
-      image: url('../imgs/szone/body_bg.jpg');
-      repeat: no-repeat;
-      size: 100% auto;
-      position: top center;
+  .szone-sk{
+    margin: 70px auto 30px;
+    width: 590px;
+    height: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow:  0 0 40px 5px #caeff6;
+    .sk-desc{
+      float: left;
+      width: 50%;
+      height: 100%;
+      box-sizing: border-box;
+      padding-left: 45px;
+      .sk-title{
+        margin-top: 50px;
+        font-size: 44px;/*px*/
+        color: #f99a92;
+      }
+      p{
+        margin-top: 15px;
+        font-size: 20px;/*px*/
+        color: #fcbdb7;
+      }
+      .btn-sk{
+        margin-top: 35px;
+        display: block;
+        width: 144px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 26px;
+        background: #4fcce1;
+      }
+    }
+    .sk-img{
+      float: left;
+      width: 50%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
   }
-
   .category {
     position: relative;
     z-index: 10;
     width: 750px;
     padding-top: 50px;
   }
-
   .category-title {
     width: 570px;
     height: 40px;
@@ -132,7 +159,7 @@ img {
         font-size: 28px; /* px */
         line-height: 40px;
         text-align: center;
-        color: #e9546b;
+        color: #f8756a;
       }
 
       .en {
@@ -149,7 +176,7 @@ img {
 
       .current {
         height: 30px;
-        color: #e9546b;
+        color: #f8756a;
         line-height: 24px;
         text-align: center;
 
@@ -188,7 +215,7 @@ img {
       margin: 20px auto 0;
       font-size: 24px; /* px */
       color: #fff;
-      background-color: #497bfc;
+      background-color: #4fcce1;
       text-align: center;
       line-height: 48px;
       border-radius: 24px;
@@ -206,13 +233,13 @@ img {
 
 .szone-rule {
   width: 750px;
-  background-color: #940f14;
-
+  background-color: #daf8fd;
+  margin: 0 auto;
   dl {
     width: 710px;
     margin: 0 auto;
     padding: 50px 0;
-    color: #fff;
+    color: #28aec4;
   }
 
   dt {

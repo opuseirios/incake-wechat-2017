@@ -19,7 +19,7 @@
 
 
 		/*detail*/
-        initDetail();
+       
 
 		$(window).scroll(function(){
 			if($(window).scrollTop() > $swiper_container_top){
@@ -41,19 +41,7 @@
 			}
 		});
 
-        /*detail*/
-		function initDetail() {
-			var $detailContent = $('#detailContent');
-			var data = {
-				list:[{
-                    detailInfoSrc:'assets/imgs/detail/detail.png',
-                    detailImgsSrc:'assets/imgs/detail/detail-imgs.png'
-				}]
-			}
-			var html = template('tpDetail',data);
-			console.log(html)
-			$detailContent.html(html);
-        }
+       
 
 
 		//数量增加减少
