@@ -25,6 +25,7 @@
 <body>
 	<div id="layout">
 		<input type="hidden" id="userName" value="15093570141">
+
 		<!--蛋糕款式-->
 		<div id="cake_list" class="clearfix">
 			<!--惊喜款-->
@@ -123,6 +124,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!--送达时间-->
 		<div class="time time-shade" id="select_contact">
 			<a herf="javascript:;" class="clearfix">送达时间
@@ -131,18 +133,22 @@
 					<span class="data" data-city-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact">请选择</span>
 				</a>
 		</div>
+
 		<!--蛋糕卡-->
 		<div class="cakeCard">
 			<a herf="javascript:;">蛋糕卡<span>请选择</span></a>
 		</div>
+
 		<!-- 向阳卡 -->
 		<div class="sunnyCard">
 			<a herf="javascript:;">向阳印克卡券<span>请选择</span></a>
 		</div>
+
 		<!--优惠券-->
 		<div class="discount-coupon">
 			<a herf="javascript:;">优惠券/码<span>请选择</span></a>
 		</div>
+
 		<!--支付方式-->
 		<div class="pay-method">
 			<a herf="javascript:;">支付方式
@@ -183,6 +189,7 @@
 				</p>
 			</div>
 		</div>
+
 		<!--生日牌-->
 		<div class="birthday">
 			<a herf="javascript:;" class="pc-box">生日牌
@@ -193,6 +200,7 @@
 				<input type="text" placeholder="生日牌可输入10个汉字或20个字母" />
 			</div>
 		</div>
+
 		<!--生日贺卡-->
 		<div class="birthday-card">
 			<a herf="javascript:;">生日贺卡
@@ -203,6 +211,7 @@
 				<textarea name="" placeholder="生日贺卡可输入50字" class="birthdayWrite"></textarea>
 			</div>
 		</div>
+
 		<!--订单备注-->
 		<div class="order-comment">
 			<a herf="javascript:;">订单备注
@@ -213,6 +222,7 @@
 				<textarea placeholder="给INCAKE留言" class="orderWrite"></textarea>
 			</div>
 		</div>
+
 		<!--订单信息-->
 		<div class="order-information">
 			<p><span>商品总金额:￥</span><span class="s-total" id="totalPrice">288</span></p>
@@ -222,6 +232,7 @@
 			<p><span>补差价:￥</span><span class="s-difference" id="senders">0.00</span></p>
 			<p><span>运费:￥</span><span class="s-freight" id="freight">0.00</span></p>
 		</div>
+
 		<!--去结算-->
 		<div class="closes">
 			<span>共<span><span>￥</span><span class="s-money" id="cashPay">189</span>.00</span>
@@ -242,6 +253,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!--图片裁剪-->
 		<div class="container">
 			<div class="img-container">
@@ -250,6 +262,7 @@
 			<a href="javascript:;" class="reupload-image">取消</a>
 			<a href="javascript:;" class="tailor">完成</a>
 		</div>
+
 		<!--母亲节弹框-->
 		<div class="mother-shade">
 			<div class="mother-popup">
@@ -258,6 +271,7 @@
 				<a href="javascript:;" class="mother-confirm">确认</a>
 			</div>
 		</div>
+
 		<!--升级弹框-->
 		<div class="upgrade-shade">
 			<div class="upgrade-popup">
@@ -267,6 +281,7 @@
 				<a href="javascript:;">升级</a>
 			</div>
 		</div>
+
 		<!--查看惊喜弹框-->
 		<div class="surprised-shade">
 			<div class="surprised-popup">
@@ -309,6 +324,7 @@
 				<a href="javascript:;" class="popup-confirm">确&nbsp;&nbsp;定</a>
 			</div>
 		</div>
+
 		<!--添加地址-->
 		<div class="address-shade">
 			<div id="address-div">
@@ -360,6 +376,7 @@
 				<a href="javascript:;">添加新的收货地址</a>
 			</div>
 		</div>
+
 		<!--修改地址-->
 		<div class="add-address-layout">
 			<div id="add-address-head">
@@ -472,31 +489,35 @@
 
 		<!--蛋糕卡-->
 		<div class="cake-card">
-			<div class="cake-card-payShow">
-				<p><span>蛋糕卡</span><span class="cake-complete">完成</span></p>
-				<ul class="cake-add clearfix">
-					<li>12345<span></span></li>
-					<li>12345<span></span></li>
-				</ul>
-				<ul class="clearfix">
-					<li><input class="cake-number" type="text" placeholder="请输入蛋糕卡ID的后5位" /></li>
-					<li><input type="text" placeholder="请输入蛋糕卡密码" /><a class="cake-conversion" href="javascript:;">兑换</a></li>
-				</ul>
+			<div class="cake-card-wrapper">
+				<div class="cake-card-payShow">
+					<p><span>蛋糕卡</span><span class="cake-complete">完成</span></p>
+					<ul class="cake-add clearfix">
+						<li>12345<span></span></li>
+						<li>12345<span></span></li>
+					</ul>
+					<ul class="clearfix">
+						<li><input class="cake-number" type="text" placeholder="请输入蛋糕卡ID的后5位" /></li>
+						<li><input type="text" placeholder="请输入蛋糕卡密码" /><a class="cake-conversion" href="javascript:;">兑换</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
 		<!-- 向阳印克卡券 -->
 		<div class="sunny-card">
-			<div class="sunny-card-payShow">
-				<p><span>向阳印克卡券</span><span class="sunny-complete">完成</span></p>
-				<ul class="sunny-add clearfix">
-					<li>ID:<span>1265646785</span><span>余额: <span>￥256</span></span><span class="delete-card"></span></li>
-					<li>ID:<span>1265646785</span><span>余额: <span>￥256</span></span><span class="delete-card"></span></li>
-				</ul>
-				<ul class="clearfix">
-					<li><input class="sunny-number" type="text" placeholder="请输入蛋糕卡ID的后5位" /></li>
-					<li><input type="text" placeholder="请输入蛋糕卡密码" /><a class="sunny-conversion" href="javascript:;">兑换</a></li>
-				</ul>
+			<div class="sunny-card-wrapper">
+				<div class="sunny-card-payShow">
+					<p><span>向阳印克卡券</span><span class="sunny-complete">完成</span></p>
+					<ul class="sunny-add clearfix">
+						<li>ID:<span>1265646785</span><span>余额: <span>￥256</span></span><span class="delete-card"></span></li>
+						<li>ID:<span>1265646785</span><span>余额: <span>￥256</span></span><span class="delete-card"></span></li>
+					</ul>
+					<ul class="clearfix">
+						<li><input class="sunny-number" type="text" placeholder="请输入蛋糕卡ID的后5位" /></li>
+						<li><input type="text" placeholder="请输入蛋糕卡密码" /><a class="sunny-conversion" href="javascript:;">兑换</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!--蛋糕卡错误提示-->

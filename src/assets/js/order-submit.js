@@ -276,23 +276,46 @@
 		$address_shade.animate({"top":0});
 	});
 
-	// 修改地址
+	// 修改地址 modified
 	$amend.click(function(event){
 		event.preventDefault();
 		event.stopPropagation();
+		$(document).scrollTop(0);
 		$add_layout.animate({"top":0});
+		touchmove();
 	});
 
+	// modified
 	$add_address.click(function(event){
 		event.preventDefault();
 		event.stopPropagation();
+		$(document).scrollTop(0);
 		$add_layout.animate({"top":0});
+		touchmove();
 	});
 
-	// 提交
+	// 提交 modified
 	$foot.click(function(){
 		$address_shade.animate({"top":"-200%"});
 		$add_layout.animate({"top":"-200%"});
+		removeTouchmove();
+	});
+
+	// added
+	var allowAddressClose = false;
+	$add_layout.on('focus', 'input', function() {
+		allowAddressClose = false;
+		setTimeout(function() {
+			var scrollHeight = $add_layout.prop('scrollHeight');
+			$add_layout.scrollTop(scrollHeight, 200);
+		}, 200);
+	}).on('blur', 'input', function(e) {
+		allowAddressClose = true;
+		setTimeout(function() {
+			if (allowAddressClose) {
+				$(document).scrollTop(0);
+			}
+		}, 200);
 	});
 
 	$("#address-div ul").on("click","li",function(){
@@ -322,26 +345,48 @@
 	// 向阳卡
 	var $sunnyCard = $(".sunnyCard"),
 		$sunny_card = $(".sunny-card"),
+		$sunny_card_wrapper = $(".sunny-card-wrapper"),
+		$sunny_card_payshow = $(".sunny-card-payShow"),
 		$sunny_complete = $sunny_card.find('.sunny-complete'),
 		$sunny_conversion = $sunny_card.find('.sunny-conversion'),
 		$sunny_number = $sunny_card.find('.sunny-number'),
 		$sunny_add = $sunny_card.find('.sunny-add');
 
+	// modified
 	$sunnyCard.click(function(){
-		$sunny_card.fadeIn();
-		touchmove();
+		$(document).css('overflow-y', 'hidden').scrollTop(0);
+		$sunny_card.fadeIn().css('position', 'absolute');
+		// touchmove();
 	});
 
+	// added
+	var allowSunnyClose = false;
+	$sunny_card.on('focus', 'input', function() {
+		allowSunnyClose = false;
+		setTimeout(function() {
+			var scrollHeight = $sunny_card_payshow.prop('scrollHeight');
+			$sunny_card_payshow.scrollTop(scrollHeight, 200);
+		}, 200);
+	}).on('blur', 'input', function(e) {
+		allowSunnyClose = true;
+		setTimeout(function() {
+			if (allowSunnyClose) {
+				$(document).scrollTop(0);
+			}
+		}, 200);
+	});
+
+	// modified
 	$sunny_card.click(function(e){
-		if(e.target == $sunny_card[0]){
-			$sunny_card.fadeOut();
-			removeTouchmove();
+		if(e.target == $sunny_card_wrapper[0]){
+			$sunny_card.fadeOut().css('position', 'fixed');
+			// removeTouchmove();
 		}
 	});
 
 	$sunny_complete.click(function(){
-		$sunny_card.fadeOut();
-		removeTouchmove();
+		$sunny_card.fadeOut().css('position', 'fixed');
+		// removeTouchmove();
 	});
 
 	$sunny_conversion.click(function(){
@@ -359,17 +404,38 @@
 		$cakeCard = $(".cakeCard").find("a");
 		$cake_add = $(".cake-add"),
 		$cake_card = $(".cake-card"),
+		$cake_card_wrapper = $(".cake-card-wrapper"),
+		$cake_card_payshow = $(".cake-card-payShow"),
 		$cake_complete = $(".cake-complete");
 
+	// modified
 	$cakeCard.click(function(){
-		$cake_card.fadeIn();
-		touchmove();
+		$(document).css('overflow-y', 'hidden').scrollTop(0);
+		$cake_card.fadeIn().css('position', 'absolute');
+		// touchmove();
+	});
+
+	// added
+	var allowCardClose = false;
+	$cake_card.on('focus', 'input', function() {
+		allowCardClose = false;
+		setTimeout(function() {
+			var scrollHeight = $cake_card_payshow.prop('scrollHeight');
+			$cake_card_payshow.scrollTop(scrollHeight, 200);
+		}, 200);
+	}).on('blur', 'input', function(e) {
+		allowCardClose = true;
+		setTimeout(function() {
+			if (allowCardClose) {
+				$(document).scrollTop(0);
+			}
+		}, 200);
 	});
 
 	$cake_card.click(function(e){
-		if(e.target == $cake_card[0]){
-			$cake_card.fadeOut();
-			removeTouchmove();
+		if(e.target == $cake_card_wrapper[0]){
+			$cake_card.fadeOut().css('position', 'fixed');
+			// removeTouchmove();
 		}
 	});
 
@@ -383,8 +449,8 @@
 	});
 
 	$cake_complete.click(function(){
-		$cake_card.fadeOut();
-		removeTouchmove();
+		$cake_card.fadeOut().css('position', 'fixed');
+		// removeTouchmove();
 	});
 
 	// 裁剪
@@ -1050,4 +1116,5 @@
 		})();
 
 	})();
+
 })(jQuery, window, document);
