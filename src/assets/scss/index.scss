@@ -1107,3 +1107,33 @@ $loc-triangle-bgcolor: #f0f0f0;
         }
     }
 }
+
+/*二维码*/
+.qrcode-cover{
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 99999;
+    .qrcode{
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+        img{
+            width: 274px;
+            height: 528px;
+        }
+        .qrcode-close{
+            display: block;
+            margin: 20px auto 0;
+            height: 80px;
+            width: 80px;
+            background: url("./../../assets/imgs/index/qrcode-close.png") no-repeat;
+            background-size: 80px 80px;
+        }
+    }
+}

@@ -26,6 +26,7 @@ input{
   position: relative;
   .coupon-header{
     width: 100%;
+    height: 1006px;
     background: {
       image: url("../imgs/china-mobile/bg.png");
       repeat: no-repeat;
@@ -195,6 +196,7 @@ input{
     width: 100%;
     background: #f9fef2;
     padding-top: 25px;
+    padding-bottom: 80px;
     /*二维码*/
     .qrCode{
       width: 100%;
@@ -226,19 +228,21 @@ input{
     }
     .coupon-section{
       margin: 0px 30px;
-      color: #cc6d49;
+      color: #d28060;
+      font-weight: 500;
       .title{
         font-size: 28px;
         text-align: center;
         line-height: 120px;
         position: relative;
+        font-weight: 600;
         &::after,&::before{
           content: '';
           width: 135px;
           display: inline-block;
           position: absolute;
           height: 2px;
-          background: #cc6d49;
+          background: #d28060;
           top: 50%;
           margin-top: -1px;
         }
@@ -341,5 +345,17 @@ input{
       }
     }
   }
+}
+.convert{
+  display: block;
+  width: 290px;
+  margin: 20px auto 0;
+  border-radius: 45px;
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+  font-size: 36px;
+  background: #fa7644;
+  box-shadow: #fa7644 0 10px 30px 6px;
 }
 

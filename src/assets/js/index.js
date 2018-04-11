@@ -84,6 +84,21 @@
             });
         });
 
+        /*关闭二维码遮层*/
+        if(Cookies.get('name')==='cookie'){
+            $('.qrcode-cover').css('display','none');
+        }else {
+            $('.qrcode-cover').css('display','block');
+        }
+
+        $('.qrcode-close').click(function () {
+            $('.qrcode').fadeOut(function () {
+                $('.qrcode-cover').fadeOut()
+            })
+
+           Cookies.set('name','cookie',{ expires: 7 });
+        })
+
         //点击筛选
         $("#shade").click(function(e) {
             if (e.target === $("#shade")[0]) {
