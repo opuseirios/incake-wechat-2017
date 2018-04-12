@@ -1,0 +1,90 @@
+.business-cooperation-page{
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  .logo{
+    margin: 60px auto 0;
+    width: 231px;
+    height: 72px;
+    background: url("../imgs/business-cooperation/logo.png") no-repeat;
+    background-size: 231px 72px;
+  }
+  .content{
+    width: 670px;
+    margin: 200px auto 80px;
+    box-sizing: border-box;
+    ul{
+      list-style: none;
+      margin-bottom: 90px;
+      li{
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 50px;
+        span{
+          margin-left: 30px;
+          margin-right: 40px;
+          font-size: 26px;
+          color: #606060;
+        }
+        input{
+          padding-left: 15px;
+          width: 470px;
+          height: 70px;
+          border-radius: 10px;
+          color: #a4a4a4;
+          border: 1px solid #999;
+          box-shadow: 2px -2px 2px #f0efef;
+          box-sizing: border-box;
+        }
+        &.cooperation{
+          height: 300px;
+          margin-top: -20px;
+          position: relative;
+          span{
+            vertical-align: top;
+          }
+          textarea{
+            box-sizing: border-box;
+            margin-top: 20px;
+            padding: 10px 15px;
+            width: 470px;
+            height: 300px;
+            border-radius: 10px;
+            border: 1px solid #999;
+            box-shadow: 2px -2px 2px #f0efef;
+            line-height: 44px;
+            font-size: 24px;
+            color: #a4a4a4;
+          }
+          .maxlength-feedback{
+            position: absolute;
+            width: 200px;
+            font-size: 22px;
+            color: #cdcdcd;
+            bottom: -80px;
+            right: -20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    p{
+      text-align: center;
+      color: #9e9e9e;
+      font-size: 24px;
+    }
+  }
+  .submit{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 10px;
+    font-size: 28px;
+    color: #fff;
+    background: #e9536b;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
