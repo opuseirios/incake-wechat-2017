@@ -1,0 +1,491 @@
+li, ul {
+  list-style: none
+}
+
+img {
+  vertical-align: top
+}
+
+img, input {
+  border: none
+}
+
+input::-webkit-input-placeholder {
+  color: #c6c6c6
+}
+
+input::-moz-placeholder {
+  color: #c6c6c6
+}
+
+input:-ms-input-placeholder {
+  color: #c6c6c6
+}
+
+.china-mobile-page {
+  width: 100%;
+  max-width: 10rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative
+}
+
+.china-mobile-page .coupon-header {
+  width: 100%;
+  background-image: url(../imgs/china-mobile2/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #dce3bb
+}
+
+.china-mobile-page .head-body {
+  width: 8.933333rem;
+  margin: 0 auto;
+  padding-top: 11.2rem;
+  font-size: .346667rem;
+  padding-bottom: .266667rem
+}
+
+.china-mobile-page .head-body .tel {
+  margin: 0 auto;
+  width: 7.733333rem;
+  height: 1.066667rem
+}
+
+.china-mobile-page .head-body .tel input {
+  width: 100%;
+  height: 100%;
+  line-height: 1.066667rem;
+  border-radius: .533333rem;
+  padding-left: .533333rem;
+  box-sizing: border-box;
+  color: #333;
+  background: #f6ece8
+}
+
+.china-mobile-page .head-body div.message {
+  width: 7.733333rem;
+  margin: 0 auto;
+  height: 1.066667rem
+}
+
+.china-mobile-page .head-body div.message input {
+  box-sizing: border-box;
+  line-height: 1.066667rem;
+  padding-left: .533333rem;
+  border-radius: .533333rem;
+  width: 100%;
+  color: #333;
+  background: #f6ece8
+}
+
+.china-mobile-page .head-body div.message #sendMessage {
+  width: 3.066667rem
+}
+
+.china-mobile-page .head-body div.message .send {
+  background: #f6ece8;
+  color: #ef9aa0
+}
+
+.china-mobile-page .head-body #receiveCoupon {
+  width: 3.866667rem;
+  margin: .933333rem auto
+}
+
+.china-mobile-page .head-body .btn {
+  display: block;
+  border-radius: .533333rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.066667rem;
+  font-size: .346667rem;
+  background: #fa7644;
+  box-shadow: 0 .133333rem .4rem .08rem #fa7644
+}
+
+.china-mobile-page .head-body #maskAction {
+  position: relative;
+  width: 7.72rem;
+  margin: .666667rem auto .4rem;
+  height: 1.066667rem;
+  line-height: 1.066667rem
+}
+
+.china-mobile-page .head-body #maskAction .slider {
+  position: absolute;
+  width: 100%;
+  height: 1.066667rem;
+  box-shadow: 0 0 .04rem #dce3bb;
+  border-radius: .533333rem;
+  background: #f6ece8;
+  top: 50%;
+  left: 0;
+  right: .266667rem;
+  transform: translateY(-60%)
+}
+
+.china-mobile-page .head-body #maskAction .slider .label {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #4d4d4d), color-stop(.4, #4d4d4d), color-stop(.5, #fff), color-stop(.6, #4d4d4d), color-stop(1, #4d4d4d));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: a 3s infinite;
+  -webkit-text-size-adjust: none;
+  width: 100%;
+  font-size: .32rem;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  text-align: center
+}
+
+.china-mobile-page .head-body #maskAction .slider .button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.066667rem;
+  height: 1.066667rem;
+  border-radius: .533333rem;
+  transition: left 0s;
+  background: url(../imgs/china-mobile/buttonbggary.png) no-repeat;
+  background-size: 100% 100%
+}
+
+.china-mobile-page .head-body #maskAction .slider .active {
+  background: url(../imgs/china-mobile/buttonbg.png) no-repeat;
+  background-size: 100% 100%
+}
+
+.china-mobile-page .head-body #maskAction .slider .button-on {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.066667rem;
+  height: 1.066667rem;
+  background-color: #fff;
+  transition: left 1s;
+  -webkit-transition: left .5s
+}
+
+.china-mobile-page .head-body #maskAction .slider .track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  transition: width 0s;
+  -webkit-transition: width 0s
+}
+
+.china-mobile-page .head-body #maskAction .slider .track-on {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  transition: width 1s;
+  -webkit-transition: width .5s;
+  background: #dce3bb
+}
+
+.china-mobile-page .head-body #maskAction .slider .bg-green {
+  line-height: 1.066667rem;
+  height: 1.066667rem;
+  text-align: center;
+  background-color: #b8c288;
+  border-radius: .533333rem 0 0 .533333rem;
+  position: relative;
+  color: #fff
+}
+
+[data-dpr="1"] .china-mobile-page .head-body #maskAction .slider .bg-green {
+  font-size: 12px
+}
+
+[data-dpr="2"] .china-mobile-page .head-body #maskAction .slider .bg-green {
+  font-size: 24px
+}
+
+[data-dpr="3"] .china-mobile-page .head-body #maskAction .slider .bg-green {
+  font-size: 36px
+}
+
+@keyframes a {
+  0% {
+    background-position: -2.666667rem 0
+  }
+  to {
+    background-position: 2.666667rem 0
+  }
+}
+
+.china-mobile-page .coupon-detail {
+  width: 100%;
+  background: #f9fef2;
+  padding-top: .333333rem;
+  padding-bottom: .533333rem
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper {
+  width: 8.933333rem;
+  height: 2.266667rem;
+  margin: 0 .4rem;
+  box-sizing: border-box
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper .qrCode {
+  width: 5.333333rem;
+  height: 2.4rem;
+  float: left;
+  position: relative
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper .qrCode .qrCode-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper .qrCode .qrCode-img img {
+  padding: .133333rem;
+  width: 2.066667rem;
+  height: 2.066667rem
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper .qrCode .txt {
+  height: .866667rem;
+  position: absolute;
+  left: 48%;
+  top: 32%
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper .qrCode .txt img {
+  width: 2.533333rem;
+  height: .866667rem
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper .exchange {
+  float: right;
+  width: 3.2rem;
+  height: 100%
+}
+
+.china-mobile-page .coupon-detail .qrcode-wrapper .exchange .exchange-btn {
+  margin-top: .6rem;
+  display: block;
+  width: 100%;
+  height: 1.066667rem;
+  border-radius: .533333rem;
+  color: #fff;
+  background: #acc14a;
+  font-size: .506667rem;
+  text-align: center;
+  line-height: 1.066667rem
+}
+
+.china-mobile-page .coupon-detail .coupon-section {
+  margin: 0 .4rem;
+  color: #d28060;
+  font-weight: 500
+}
+
+.china-mobile-page .coupon-detail .coupon-section .title {
+  margin: .64rem auto;
+  font-size: .373333rem;
+  text-align: center;
+  width: 7.333333rem;
+  height: .4rem;
+  line-height: .4rem;
+  position: relative;
+  font-weight: 600;
+  background: url(../imgs/china-mobile2/title-bg.png) no-repeat;
+  background-size: 7.333333rem .4rem
+}
+
+.china-mobile-page .coupon-detail .coupon-section .content {
+  box-sizing: border-box;
+  font-size: .32rem;
+  line-height: .666667rem
+}
+
+.china-mobile-page .coupon-detail .coupon-section .content li {
+  padding-right: .333333rem
+}
+
+.china-mobile-page .coupon-detail .coupon-section .content li:last-child {
+  padding-right: 0
+}
+
+.china-mobile-page .coupon-detail .coupon-rules {
+  margin-top: .266667rem;
+  padding-bottom: .266667rem
+}
+
+.receiveSuccess {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5)
+}
+
+.receiveSuccess .success {
+  position: absolute;
+  width: 6.666667rem;
+  border-radius: .266667rem;
+  background: #fff;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%
+}
+
+.receiveSuccess .success img {
+  margin: .666667rem auto .266667rem;
+  width: 1.2rem;
+  height: 1.013333rem
+}
+
+.receiveSuccess .success p {
+  color: #000;
+  font-size: .346667rem;
+  line-height: .346667rem
+}
+
+.receiveSuccess .success .notice {
+  margin: 0.266667rem 0.8rem 0;
+  text-align: left;
+  font-size: 0.293333rem;
+  line-height: 0.426667rem;
+  color: #a1a1a1;
+}
+.receiveSuccess .success .qrCode {
+  width: 4.933333rem;
+  margin: 0 auto
+}
+
+.receiveSuccess .success .qrCode .qrCode-img {
+  float: left;
+  width: 2.266667rem;
+  height: 2.266667rem
+}
+
+.receiveSuccess .success .qrCode .qrCode-img img {
+  width: 2.266667rem;
+  height: 2.266667rem
+}
+
+.receiveSuccess .success .qrCode .txt {
+  margin-top: .733333rem;
+  float: right
+}
+
+.receiveSuccess .success .qrCode .txt img {
+  width: 2.533333rem;
+  height: .866667rem
+}
+
+.receiveSuccess .success .exchange {
+  width: 3.2rem;
+  height: 1.066667rem;
+  margin: 1.066667rem auto
+}
+
+.receiveSuccess .success .exchange .exchange-btn {
+  display: block;
+  width: 3.2rem;
+  height: 1.066667rem;
+  border-radius: .533333rem;
+  line-height: 1.066667rem;
+  background: #fa7644;
+  color: #fff;
+  text-align: center;
+  font-size: .346667rem;
+  font-weight: 500
+}
+
+.receiveSuccess .success .coupon {
+  width: 5.466667rem;
+  margin: .8rem auto;
+  height: .533333rem;
+  line-height: .533333rem;
+  position: relative
+}
+
+.receiveSuccess .success .coupon .copyMsg {
+  display: none;
+  white-space: nowrap;
+  position: absolute;
+  color: #fff;
+  background: rgba(0, 0, 0, .7);
+  height: .266667rem;
+  line-height: .266667rem;
+  top: -.6rem;
+  text-align: center;
+  border-radius: .133333rem;
+  padding: .133333rem .266667rem;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+[data-dpr="1"] .receiveSuccess .success .coupon .copyMsg {
+  font-size: 10px
+}
+
+[data-dpr="2"] .receiveSuccess .success .coupon .copyMsg {
+  font-size: 20px
+}
+
+[data-dpr="3"] .receiveSuccess .success .coupon .copyMsg {
+  font-size: 30px
+}
+
+.receiveSuccess .success .coupon #couponCode {
+  width: 3.733333rem;
+  height: .533333rem;
+  line-height: .533333rem;
+  padding-left: .266667rem;
+  border-radius: .266667rem 0 0 .266667rem;
+  color: #333;
+  background: #fbe8e0
+}
+
+[data-dpr="1"] .receiveSuccess .success .coupon #couponCode {
+  font-size: 10px
+}
+
+[data-dpr="2"] .receiveSuccess .success .coupon #couponCode {
+  font-size: 20px
+}
+
+[data-dpr="3"] .receiveSuccess .success .coupon #couponCode {
+  font-size: 30px
+}
+
+.receiveSuccess .success .coupon #copyCoupon {
+  display: inline-block;
+  width: 1.466667rem;
+  margin-left: -.133333rem;
+  height: .533333rem;
+  border-radius: 0 .266667rem .266667rem 0;
+  color: #fefefe;
+  background: #fa7644
+}
+
+[data-dpr="1"] .receiveSuccess .success .coupon #copyCoupon {
+  font-size: 11px
+}
+
+[data-dpr="2"] .receiveSuccess .success .coupon #copyCoupon {
+  font-size: 22px
+}
+
+[data-dpr="3"] .receiveSuccess .success .coupon #copyCoupon {
+  font-size: 33px
+}
+
+/*# sourceMappingURL=china-mobile2.css.map */

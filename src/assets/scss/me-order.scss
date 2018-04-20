@@ -2,29 +2,37 @@ body{
     background:  #f5f5f5;
 }
 #nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
     max-width: 750px;
     width: 100%;
     margin: 0 auto;
     height: 80px;
-    overflow: hidden;
     background: #fff;
+    z-index: 100;
     ul{
         list-style: none;
+        display: flex;
         li{
-            float: left;
-            position: relative;
-            width: 187px;
-            height: 78px;
-            line-height: 80px;
+           flex: 1;
             text-align: center;
-        }
-        .active{
-            color: #e9546b;
-            border-bottom: 2px solid #e9546b;
+            line-height: 80px;
+            height: 80px;
+            box-sizing: border-box;
+            &.active{
+                color: #e9546b;
+                border-bottom: 2px solid #e9546b;
+            }
         }
     }
 }
+#content{
+    margin-top: 110px;
+}
 #await{
+    margin-top: 110px;
     display: none;
 }
 .data{

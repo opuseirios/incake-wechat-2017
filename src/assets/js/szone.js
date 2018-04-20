@@ -8,7 +8,45 @@
 
     // 下午茶
     fnBindTea();
+
+    /*秒杀预告*/
+    fnSkNotice();
   });
+
+  /*秒杀预告*/
+  function fnSkNotice() {
+    var _data = {
+      list:[
+          {
+              day:'周一',
+              name:'INBOX（芒果白雪）',
+              price:'9.9元'
+          },
+          {
+              day:'周二',
+              name:'洛丽塔 1.2磅',
+              price:'99元'
+          },
+          {
+              day:'周三',
+              name:'INBOX (豆之乳)',
+              price:'9.9元'
+          },
+          {
+              day:'周四',
+              name:'芒果绵绵雪 1.2磅',
+              price:'99元'
+          },
+          {
+              day: '周五',
+              name: 'INBOX（红丝绒）',
+              price: '9.9元'
+          }
+      ]
+    };
+    var _html = template('tplSkNotice',_data);
+    $('.sk-notice').append(_html);
+  }
 
   // 绑定新品列表
   function fnBindNew() {

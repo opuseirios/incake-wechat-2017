@@ -41,5 +41,8 @@
     "map-stream": "0.0.6",
     "postcss-px2rem": "^0.3.0",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "better-scroll": "^1.9.1"
   }
 }

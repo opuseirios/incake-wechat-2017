@@ -85,7 +85,7 @@
         });
 
         /*关闭二维码遮层*/
-        if(Cookies.get('name')==='cookie'){
+        if(Cookies.get('name')==='cookie2'){
             $('.qrcode-cover').css('display','none');
         }else {
             $('.qrcode-cover').css('display','block');
@@ -96,7 +96,7 @@
                 $('.qrcode-cover').fadeOut()
             })
 
-           Cookies.set('name','cookie',{ expires: 7 });
+           Cookies.set('name','cookie2',{ expires: 7 });
         })
 
         //点击筛选

@@ -24,6 +24,60 @@ img {
 .szone-container {
   position: relative;
   width: 750px;
+  /*sk-notice*/
+  .sk-notice{
+    width: 440px;
+    margin: 0 auto;
+    .sk-notice-wrapper{
+      width: 100%;
+      margin-top: 60px;
+      .sk-notice-title{
+        width: 100%;
+        height: 35px;
+        color: #f8756a;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 35px;
+        background: url("../imgs/szone/sk-notice-title.png") no-repeat;
+        background-size: 440px 35px;
+      }
+      .sk-notice-content{
+        width: 410px;
+        margin-top: 60px;
+        li{
+          font-size: 26px;
+          line-height: 50px;
+          color: #85dceb;
+          font-weight: 600;
+          span{
+            display: inline-block;
+          }
+          .name{
+            margin-left: 20px;
+          }
+          .price{
+            float: right;
+            color: #f8756a;
+          }
+        }
+      }
+      .sk-notice-rules{
+        margin: 20px 0;
+        font-size: 28px;
+        line-height: 50px;
+        color: #85dceb;
+        font-weight: 600;
+        i{
+          font-weight: 700;
+          color: #f8756a;
+          font-style: normal;
+        }
+      }
+    }
+
+  }
+
   .szone-sk{
     margin: 70px auto 30px;
     width: 590px;

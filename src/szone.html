@@ -23,8 +23,6 @@
   <div class="page szone-page" id="szonePage">
     <div class="page-container">
 
-
-
       <!-- banner begin -->
       <div class="szone-banner">
         <img src="assets/imgs/szone/banner.png" alt="">
@@ -33,6 +31,31 @@
 
       <!-- body begin -->
       <div class="szone-container">
+        <!--sk-notice begin-->
+        <div class="sk-notice">
+          <script id="tplSkNotice" type="text/html">
+            {{if list.length>0}}
+            <div class="sk-notice-wrapper">
+              <div class="sk-notice-title">
+                本周秒杀预告
+              </div>
+              <ul class="sk-notice-content">
+                {{each list as item i}}
+                <li class="clearfix">
+                  <span class="day">{{item.day}}<span class="name">{{item.name}}</span></span><span class="price">{{item.price}}</span>
+                </li>
+                {{/each}}
+              </ul>
+              <div class="sk-notice-rules">
+                <p>每周一至周五 <i>16:00pm</i> 准点开秒</p>
+                <p>每天限量 <i>5个</i>，先到先得</p>
+              </div>
+            </div>
+            {{/if}}
+          </script>
+        </div>
+        <!--sk-notice end-->
+
         <!--sk begin-->
         <div class="szone-sk clearfix">
           <div class="sk-desc">
