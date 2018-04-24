@@ -127,11 +127,20 @@
 
 		<!--送达时间-->
 		<div class="time time-shade" id="select_contact">
-			<a herf="javascript:;" class="clearfix">送达时间
-					<input type="hidden" name="contact_province_code" data-id="0001" id="contact_province_code" value="" data-province-name="">
-					<input type="hidden" name="contact_city_code" id="contact_city_code" value="" data-city-name="">
-					<span class="data" data-city-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact">请选择</span>
-				</a>
+			<span class="text">送达时间</span>
+
+			<div class="showTime">
+				<input type="hidden" id="timeId">
+				<span id="showTime">请选择</span>
+			</div>
+			<div class="showDate">
+				<input type="hidden" id="dateId">
+				<span id="showDate">请选择配送日期</span>
+			</div>
+					<!--<input type="hidden" name="contact_province_code" data-id="0001" id="contact_province_code" value="" data-province-name="">-->
+					<!--<input type="hidden" name="contact_city_code" id="contact_city_code" value="" data-city-name="">-->
+					<!--<spacitn class="data" data-y-code="510100" data-province-code="510000" data-district-code="510105" id="show_contact">请选择</span>-->
+
 		</div>
 
 		<!--蛋糕卡-->
