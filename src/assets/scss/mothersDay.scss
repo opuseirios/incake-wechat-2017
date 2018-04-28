@@ -1,0 +1,287 @@
+.mothersDay-page{
+  max-width: 750px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #ffe5e9;
+}
+/*banner*/
+.mothersDay-banner{
+  width: 750px;
+  img {
+    width: 100%;
+  }
+}
+.mothersDay-container{
+  width: 100%;
+
+
+
+  /*赠品*/
+  .mothersDay-present{
+    margin: 65px auto 50px;
+    width: 695px;
+    height: 838px;
+    background: url("../imgs/mothersDay/present.png") no-repeat;
+    background-size: 695px 838px;
+    .title{
+      padding-top: 490px;
+      padding-left: 110px;
+      font-size: 40px;
+      line-height: 1;
+      color: #f25670;
+    }
+    p{
+      padding-left: 110px;
+      font-size: 22px;
+      line-height: 36px;
+    }
+    .text{
+      margin-top: 60px;
+    }
+    .notice{
+      margin-top: 16px;
+      color: #f25670;
+    }
+  }
+
+  /*perceptual*/
+  .perceptual{
+    margin-top: 80px;
+    margin-bottom: 110px;
+    font-size: 24px;
+    line-height: 48px;
+    color: #fa6b89;
+    text-align: center;
+  }
+
+
+  /*福利*/
+  .benefit{
+    width: 100%;
+    margin-top: 100px;
+    .title{
+      margin: 0 auto;
+      width: 592px;
+      height: 56px;
+      background-size: 592px 56px;
+      background-image: url(./../imgs/mothersDay/title_bg.png);
+      text-align: center;
+      font-size: 54px;
+      line-height: 56px;
+      color: #fa6b89;
+    }
+    .desc{
+      margin: 44px auto;
+      text-align: center;
+      color: #fa6b89;
+      font-size: 24px;
+      line-height: 48px;
+    }
+    .cake{
+      width: 100%;
+      height: 465px;
+      display: flex;
+      background-size: 750px 465px;
+      .img{
+        display: block;
+        padding-left: 44px;
+        padding-top: 23px;
+        flex: 0 0 300px;
+        width: 300px;
+        height: 356px;
+        margin-right: 50px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .content{
+        flex: 1;
+        .name{
+          padding-top: 40px;
+          height: 44px;
+          line-height: 44px;
+          color: #f25670;
+        }
+        .en{
+          margin-top: 15px;
+          font-size: 12px;
+          line-height: 1;
+        }
+        .nowPrice{
+          margin-top: 35px;
+          font-size: 18px;/*px*/
+          color: #ff5371;
+          .price{
+            font-style: normal;
+            font-size: 30px;/*px*/
+            font-weight: 600;
+          }
+        }
+        .oldPrice{
+          //margin-top: 10px;
+          font-size: 16px;
+          text-decoration: line-through;
+          color:#ccc;
+        }
+        .orderTime,.deliveryTime,.postage{
+          margin-top: 12px;
+          font-size: 16px;
+          line-height: 1;
+          color: #333;
+          .date{
+            color: #ff738a;
+          }
+        }
+        .orderTime{
+          margin-top: 50px;
+        }
+        .buyNow{
+          display: block;
+          margin-top: 30px;
+          width: 160px;
+          height: 45px;
+          background: #3cc7fb;
+          color: #fff;
+          font-size: 30px;
+          line-height: 45px;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+    &.one{
+      .cake{
+        height: 440px;
+        background: url("../imgs/mothersDay/cake1_bg.png") no-repeat;
+        background-size: 750px 440px;
+      }
+    }
+    &.two{
+      .cake{
+        background: url("../imgs/mothersDay/cake2_bg.png") no-repeat;
+        background-size: 750px 465px;
+        .oldPrice{
+          margin-left: 18px;
+        }
+        .towPound{
+          margin-top: 0px;
+        }
+        .orderTime{
+          margin-top: 35px;
+        }
+      }
+      .queen{
+        background: url("../imgs/mothersDay/cake3_bg.png") no-repeat;
+        background-size: 750px 465px;
+      }
+    }
+
+    &.three{
+      .vote{
+        margin: 70px 0 90px 0;
+        font-size: 24px;
+        line-height: 48px;
+        text-align: center;
+        i.red{
+          font-style: normal;
+          color: #fa6b89;
+        }
+      }
+      .expects{
+        width: 100%;
+        display: flex;
+        .expect{
+          flex: 1;
+          margin-left: 25px;
+          margin-right: 20px;
+          background: url("../imgs/mothersDay/expect_bg.png") no-repeat;
+          background-size: 333px 537px;
+          .price{
+            padding-left: 55px;
+            padding-top: 130px;
+            font-size: 22px;
+            color: #ff5371;
+            i{
+              font-style: normal;
+              font-size: 40px;
+            }
+          }
+          .oldPrice{
+            padding-left: 55px;
+            margin-top: 15px;
+            font-size: 20px;
+            line-height: 1;
+            text-decoration: line-through;
+            color: #c8c8c8;
+          }
+          .img{
+            display: block;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            width: 262px;
+            height: 255px;
+            img{
+              width: 262px;
+              height: 255px;
+            }
+          }
+        }
+      }
+    }
+    &.four{
+      .cake{
+        background: url("../imgs/mothersDay/cake4_bg.png") no-repeat;
+        background-size: 750px 465px;
+      }
+      padding-bottom: 100px;
+    }
+    &.inbox{
+      .cake{
+        background: url("../imgs/mothersDay/inbox_bg.png") no-repeat;
+        background-size: 750px 438px;
+        .content{
+          .name{
+            font-size: 22px;
+            line-height: 36px;
+          }
+          .nowPrice{
+            margin-top: 60px;
+          }
+          .oldPrice{
+            margin-left: 20px;
+          }
+          .orderTime{
+            margin-top: 35px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
+
+/*规则*/
+.mothersDay-rule{
+  width: 100%;
+  background: #ffccd4;
+  padding:0 30px 40px;
+  color: #bc5277;
+  box-sizing: border-box;
+  dl{
+    dt{
+      text-align: center;
+      font-size: 26px;
+      line-height: 126px;
+      font-weight: 600;
+    }
+    dd{
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+}
