@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>INCAKE | 粉粉日记</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/plugins/normalize/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/global.css"/>
+    <link rel="stylesheet" href="assets/css/pink-diary.css"/>
+    <!-- flexible.js 建议做内联处理，请勿移动位置 -->
+    <script src="assets/plugins/lib-flexible/flexible.js"></script>
+</head>
+<body>
+<div class="pink-diray-page">
+    <div class="coupon-header">
+        <div class="head-body">
+            <p class="tel"><input type="tel" class="txt-mobile" placeholder="手机号" value="18930827836"></p>
+            <div id="maskAction">
+                <div class="slider">
+                    <div class="label">向右滑动获取动态验证码</div>
+                    <div class="track">
+                        <div class="bg-green"></div>
+                    </div>
+                    <div class="button active">
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <input type="tel" class="messageTxt" placeholder="短信验证码">
+            </div>
+            <a href="javascript:;" id="receiveCoupon" class="btn">领取优惠券</a>
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+    <!--优惠券详情-->
+    <div class="coupon-detail">
+        <!--<div class="qrcode-wrapper clearfix">-->
+            <!--&lt;!&ndash;二维码&ndash;&gt;-->
+            <!--<div class="qrCode">-->
+                <!--<div class="qrCode-img">-->
+                    <!--<img src="./assets/imgs/china-mobile2/qrCode.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="txt">-->
+                    <!--<img src="./assets/imgs/china-mobile2/txt.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;去兑换&ndash;&gt;-->
+            <!--<div class="exchange">-->
+                <!--<a href="javascript:;" class="exchange-btn">去兑换</a>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="coupon-section coupon-method">
+            <div class="title">优惠券码领用方法</div>
+            <ul class="content">
+                <li> 1.  点击上方按钮“领取优惠券”，领取成功后，优惠券将自动打入您的账户；</li>
+                <li>
+                    2.  通过长按二维码或“去兑换”按钮进入蛋糕购买页，选取所需规格的产品，订单提交时在“优惠券/码”中选择优惠券，即可自动抵扣相应金额；
+                </li>
+                <li>  3.  该优惠券仅限正价订购蛋糕类产品使用，并不可用于特惠产品。</li>
+            </ul>
+        </div>
+        <div class="coupon-section coupon-rules">
+            <div class="title">优惠券码使用规则</div>
+            <ul class="content">
+                <li>1.  优惠券码使用时间：即日起至2018年12月31日；</li>
+                <li>2.  配送时间：下单次日起至2019年1月31日；</li>
+                <li>3.  配送区域：INCAKE可配送的所有区域，具体配送范围及收费标准以下单信息为准；</li>
+                <li>4.  此优惠券码仅限正价订购INCAKE蛋糕产品；</li>
+                <li>5.  支付前使用此优惠券进行抵扣方可享受优惠；</li>
+                <li>6.  购买渠道：INCAKE官方网站www.incake.net  INCAKE订购公众号；</li>
+                <li>7.  优惠券恕不退款、不兑现、不找零，订购时本券兑付部分不开具发票；</li>
+                <li>8.  该优惠券码不与INCAKE其他优惠同享；</li>
+                <li> 9.  客服电话400-921-5757 服务时间（09：00-21：00）</li>
+            </ul>
+        </div>
+    </div>
+    <div class="receiveSuccess">
+        <div class="success">
+            <img src="./assets/imgs/pink-diary/success.png" alt="">
+            <p>领取成功</p>
+            <!--<div class="coupon">-->
+            <!--<p class="copyMsg">复制成功</p>-->
+            <!--<input type="text" id="couponCode" readonly value="#65738563759200997596">-->
+            <!--<a href="javascript:;" id="copyCoupon" data-clipboard-target='#couponCode'>复制券码</a>-->
+            <!--</div>-->
+            <p class="notice">优惠券已打入您的账户，订单提交时，选择优惠券即可兑换！</p>
+            <!--二维码-->
+            <div class="qrCode clearfix">
+                <div class="qrCode-img">
+                    <img src="./assets/imgs/pink-diary/qrCode.png" alt="">
+                </div>
+                <div class="txt">
+                    <img src="./assets/imgs/pink-diary/txt.png" alt="">
+                </div>
+            </div>
+            <!--去兑换-->
+                <a href="javascript:;" class="exchange">去兑换</a>
+        </div>
+    </div>
+</div>
+<script src="assets/plugins/LABjs/LAB.min.js"></script>
+<script>
+    $LAB
+        .script('assets/plugins/artTemplate/dist/template.js').wait()
+        .script('assets/plugins/jquery/jquery-3.1.1.min.js').wait()
+        .script('assets/plugins/clipboard/clipboard.min.js').wait()
+        .script('assets/js/pink-diary.js');
+</script>
+</body>
+</html>
