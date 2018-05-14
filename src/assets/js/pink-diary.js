@@ -43,6 +43,7 @@
             }
             var touches = e.originalEvent.touches[0];
             disX = touches.clientX - $oBtn.position().left;
+            console.log(disX);
             $oBtn.removeClass('button-on');
             $oTrack.removeClass('track-on');
             document.addEventListener('touchmove',defaultEvent,false);/*阻止页面发生默认事件*/

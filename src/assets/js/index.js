@@ -53,8 +53,33 @@
             function updateViewport() {
                 imgLazyLoad.update();
             }
+
+            fnInitNotice();
         })();
 
+        /*公告*/
+        function fnInitNotice() {
+            var $notice = $('#idxNotice'),
+                $noticeMsg = $notice.find('.notice-content').find('p'),
+                tl = new TimelineLite();
+
+            $noticeMsg.marquee({
+                duration: 15000,
+                gap: 150,
+            });
+            $('.notice-content').on('touchstart',function (e) {
+                return false;
+            })
+            $notice.on('click', '.notice-close', function(e) {
+                tl.clear();
+                tl.to($notice, 1, {
+                    opacity: 0,
+                    onComplete: function() {
+                        $notice.remove();
+                    }
+                });
+            });
+        }
         //swiper图片轮播
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
