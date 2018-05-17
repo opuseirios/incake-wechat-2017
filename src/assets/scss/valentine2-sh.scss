@@ -1,0 +1,139 @@
+.valentine2-page{
+  max-width: 750px;
+  margin: 0 auto;
+  width: 100%;
+}
+.valentine2-banner{
+  width: 100%;
+  height: 433px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+.valentine2-container{
+  width: 100%;
+  margin-top: -5px;
+  background-image: url("../imgs/valentine2-sh/bg.png");
+  background-size: 100% 2518px;
+  background-color: #c2d8f2;
+  background-repeat: no-repeat;
+  .flower{
+    padding-top: 480px;
+    width: 100%;
+    margin: 0 auto;
+    .flower-text{
+      width: 400px;
+      margin-left: 210px;
+      line-height: 40px;
+      font-size: 20px;
+      color: #4877b4;
+      i.red{
+        font-style: normal;
+        color: #e9546a;
+      }
+    }
+  }
+  .section{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #4877b4;
+    margin-left: -10px;
+    &.first{
+      padding-top: 250px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &.anniversary{
+      margin-bottom: 20px;
+    }
+    .name{
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+    }
+    .text{
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+  .cake{
+    width: 100%;
+    height: 530px;
+    padding-top: 130px;
+    position: relative;
+    .name{
+      position: absolute;
+      top: 290px;
+      left: 520px;
+      color: #4877b4;
+      .cn{
+        font-size: 36px;
+      }
+      .en{
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    }
+    .cakeImg1{
+      display: block;
+      width: 546px;
+      height: 583px;
+      img{
+        width: 546px;
+        height: 583px;
+      }
+    }
+    .cakeImg2{
+      display: block;
+      width: 360px;
+      height: 360px;
+      position: absolute;
+      left: 315px;
+      top: 385px;
+      z-index: 1;
+      img{
+        width: 360px;
+        height: 360px;
+      }
+    }
+  }
+  .btn{
+    padding: 150px 0;
+  }
+  .buyNow{
+    display: block;
+    margin: 0 auto;
+    width: 340px;
+    height: 90px;
+    border-radius: 45px;
+    background: #ffdee8;
+    color: #4877b4;
+    font-size: 44px;
+    line-height: 90px;
+    text-align: center;
+    box-shadow: 0 0px 50px 20px #abc7ec;
+  }
+}
+
+.valentine2-rule{
+  width: 100%;
+  background: #afcae9;
+  color: #3b5f8e;
+  dl{
+    width: 690px;
+    padding: 50px 30px;
+    dt{
+      font-size: 26px;
+      text-align: center;
+      font-weight: 600;
+      padding-bottom: 40px;
+    }
+    dd{
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+}

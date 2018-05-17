@@ -1,8 +1,8 @@
 ;
 (function($, window, document) {
-
+    var tl = new TimelineLite();
     $(function() {
-        var tl = new TimelineLite();
+       
 
         var swiper01 = new Swiper('.swiper-container01', {
             pagination: '.swiper-pagination',
