@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>INCAKE | 下午茶</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/plugins/normalize/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/global.css"/>
+    <link rel="stylesheet" href="assets/css/afternoon-tea.css"/>
+    <!-- flexible.js 建议做内联处理，请勿移动位置 -->
+    <script src="assets/plugins/lib-flexible/flexible.js"></script>
+</head>
+<body>
+<!-- szone page begin -->
+<div class="page afternoon-tea-page" id="afternoonTeaPage">
+    <div class="page-container">
+
+        <!-- banner begin -->
+        <div class="afternoon-tea-banner">
+            <img src="assets/imgs/afternoon-tea/banner.png" alt="">
+        </div>
+        <!-- banner end -->
+        <!-- body begin -->
+        <div class="afternoon-tea-container">
+            <div class="txt">最北的桃树以结果的形式&nbsp;&nbsp;&nbsp;宣布春归，夏至<br>
+                最南的空调却说它早已工作多时</div>
+            <div class="txt">放眼中国&nbsp;&nbsp;&nbsp;此刻不分南北<br>
+                因为他们共同的敌人和朋友<br>
+                夏天来了</div>
+            <div class="txt">对于夏的褒贬说法不一<br>
+                不过伴着它到了的精致下午茶和啤酒小龙虾<br>
+                无人不爱</div>
+            <div class="group group1 clearfix" id="group">
+                <script type="text/html" id="tplGroup">
+                    {{each list as item i}}
+                    <div class="cake">
+                        <a href="javascript:;" class="img">
+                            <img src="{{item.img}}" alt="">
+                        </a>
+                        <p class="name">{{item.name}}</p>
+                        <p class="en">{{item.en}}</p>
+                        <div class="price"><i class="rmb">¥</i><span class="num">{{item.price}}</span>/<span class="unit">{{item.unit}}</span></div>
+                        <a href="javascript:;" class="buyNow">立即购买</a>
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+            <div class="txt txt2">
+                #INCAKE沁凉一夏#<br>
+                为你准备了一份精致和优雅
+            </div>
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/plugins/LABjs/LAB.min.js"></script>
+<script>
+    $LAB
+        .script('assets/plugins/jquery/jquery-3.1.1.min.js').wait()
+        .script('assets/plugins/artTemplate/dist/template.js').wait()
+        .script('assets/plugins/underscore/underscore-min.js').wait()
+        .script('assets/js/common.js').wait()
+        .script('assets/js/afternoon-tea.js');
+</script>
+</html>

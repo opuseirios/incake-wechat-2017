@@ -89,7 +89,7 @@ $loc-triangle-bgcolor: #f0f0f0;
         margin: auto;
         display: table;
         color: #fff;
-        font-size: 22px;/*px*/
+        font-size: 22px;
     }
 }
 
@@ -112,7 +112,7 @@ $loc-triangle-bgcolor: #f0f0f0;
         float: left;
         width: 80px;
         line-height: 56px;
-        font-size: 20px;/*px*/
+        font-size: 20px;
         text-align: center;
         color: #e9546b;
         font-weight: bold;
@@ -123,7 +123,7 @@ $loc-triangle-bgcolor: #f0f0f0;
         float: left;
         overflow: hidden;
         color: #e9546b;
-        font-size: 20px;/*px*/
+        font-size: 20px;
         line-height: 56px;
         p{
             height: 56px;
@@ -203,15 +203,19 @@ $loc-triangle-bgcolor: #f0f0f0;
 
     .entries {
         display: flex;
+        display: -webkit-flex;
         flex-direction: row;
+        -webkit-justify-content: center;
         justify-content: space-around;
+        -webkit-justify-content: space-around;
         width: 710px;
         margin: 0 auto;
     }
 
     .entry {
-        width: 100px;
 
+        flex: 1;
+        -webkit-flex: 1;
         .img {
             display: block;
             width: 82px;
@@ -228,7 +232,7 @@ $loc-triangle-bgcolor: #f0f0f0;
         p {
             padding-top: 26px;
             text-align: center;
-            font-size: 22px; /* px */
+            font-size: 22px;
             line-height: 30px;
             color: #333;
         }

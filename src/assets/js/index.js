@@ -32,7 +32,7 @@
     });
 
     $(function() {
-
+        window.httphijack.init();
         var tl = new TimelineLite();
         //加载图片
         initData();

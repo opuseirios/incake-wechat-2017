@@ -1,4 +1,5 @@
 ;(function ($, window, document) {
+    /*template规则*/
     template.helper('specFormat', function (specs) {
         var str = '';
         if (!!specs && $.isArray(specs)) {
@@ -102,7 +103,6 @@
 
 
         /*点击蜡烛加号，弹出选框*/
-
         var addPart = document.getElementsByClassName('addPart')[0];
         $(addPart).click(function () {
             $('.accounts').fadeOut();
@@ -182,11 +182,6 @@
             accountHeight = $('.accounts').height();
         //		var	mainpaddingBottom = parseInt($("#loading").css("padding-bottom"));
         var disT = (scrollTop + viewHeight+accountHeight) - (mainTop + mainHeight);
-        console.log(disT);
-        console.log(scrollTop);
-        console.log(viewHeight);
-        console.log(mainHeight);
-        console.log(mainTop);
         if (disT > 0) {
             initData();
         }
