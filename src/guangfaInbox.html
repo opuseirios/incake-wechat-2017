@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <title>INCAKE | 广发INBOX</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="Shortcut Icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/plugins/normalize/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/global.css"/>
+    <link rel="stylesheet" href="assets/css/guangfaInbox.css"/>
+    <!-- flexible.js 建议做内联处理，请勿移动位置 -->
+    <script src="assets/plugins/lib-flexible/flexible.js"></script>
+</head>
+
+<body>
+<div class="page guangfaInbox-page" id="guangfaInboxPage">
+    <div class="page-container">
+        <div class="guangfaInbox-container">
+            <div class="header-content">
+                <div class="flag">
+                    <img src="./assets/imgs/guangfaInbox/flag.png" alt="">
+                </div>
+                <div class="header">
+                    <p class="norms">
+                        领取<i class="red">“广发专享61元INBOX抵用券”</i><br>
+                        —进入“广发荟专区”<br>
+                        —选择广发定制款系列2个及以上组合<br>
+                        —在订单提交页“优惠券/码”中选择<br>
+                        <i class="orange">“广发专享61元INBOX抵用券”</i>
+                    </p>
+                    <p class="note">
+                        <span class="left">注:</span>
+                        <span class="right">
+                            系统将自动显示优惠价格，点击跳转支付。如选择的不是广发定制款系列，结算价格则按官网常规活动价结算；如选择的广发定制款非2盒，则订单无法提交。
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="inbox-container">
+                <div class="normal" id="normalList">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox1.png"/></a>
+                            <a class="like" href="javascript:;"></a>
+                            <p><span class="change">Inbox(莓の恋)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox2.png"/></a>
+                            <a class="like" href="javascript:;"></a>
+                            <p><span class="change">Inbox(八四二四)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox3.png"/></a>
+                            <a class="like" href="javascript:;"></a>
+                            <p><span class="change">Inbox(豆の乳)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox4.png"/></a>
+                            <a class="like" href="javascript:;"></a>
+                            <p><span class="change">Inbox(黑巧脏脏)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sold-out">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox1.png"/></a>
+                            <p><span class="change">Inbox(莓の恋)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox2.png"/></a>
+                            <p><span class="change">Inbox(八四二四)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox3.png"/></a>
+                            <p><span class="change">Inbox(豆の乳)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="./assets/imgs/guangfaInbox/inbox4.png"/></a>
+                            <p><span class="change">Inbox(黑巧脏脏)</span> <span>INBOX</span></p>
+                            <p class="pirce">69/<span>1盒</span></p>
+                            <span class="car"></span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-content">
+                <div class="animal">
+                    <img src="./assets/imgs/guangfaInbox/animals.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="assets/plugins/LABjs/LAB.min.js"></script>
+<script>
+    $LAB
+        .script('assets/plugins/jquery/jquery-3.1.1.min.js').wait()
+        .script('assets/plugins/artTemplate/dist/template.js').wait()
+        .script('assets/plugins/tweenmax/TweenMax.min.js').wait()
+        .script('assets/js/common.js').wait()
+        .script('assets/js/guangfaInbox.js');
+</script>

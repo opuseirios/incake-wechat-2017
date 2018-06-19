@@ -1,0 +1,231 @@
+ul, li {
+  list-style: none;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+}
+
+.guangfaInbox-page{
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  background: url("./../imgs/guangfaInbox/bg.png");
+  background-size: 100% 2825px;
+}
+.guangfaInbox-container {
+  .header-content {
+    .flag {
+      width: 100%;
+      height: 150px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .header {
+      width: 600px;
+      margin: 20px auto;
+      height: 560px;
+      background: url("./../../assets/imgs/guangfaInbox/header.png") no-repeat;
+      background-size: 590px 486px;
+      background-position: 0 74px;
+      .norms {
+        line-height: 44px;
+        font-size: 24px;
+        color: #a8d3d8;
+        text-align: center;
+        .red {
+          font-style: normal;
+          color: #ec7392;
+        }
+        .orange {
+          font-style: normal;
+          color: #e36c1e;
+        }
+      }
+      .note {
+        width: 380px;
+        margin: 0 auto;
+        padding-top: 65px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #ea5a74;
+        .left {
+          display: inline-block;
+          float: left;
+          width: 30px;
+        }
+        .right {
+          display: inline-block;
+          width: 340px;
+          float: left;
+        }
+      }
+    }
+  }
+  .inbox-container {
+    padding-top: 30px;
+    width: 690px;
+    margin: 0 auto;
+    .normal, .sold-out {
+      overflow: hidden;
+      list-style: none;
+      li:nth-child(2n) {
+        margin-left: 20px;
+      }
+      li {
+        position: relative;
+        float: left;
+        border: 1px solid #dcdcdc; /*no*/
+        border-radius: 10px;
+        width: 330px;
+        margin: 10px 0;
+        overflow: hidden;
+        a:nth-of-type(1) {
+          display: block;
+          width: 330px;
+          height: 330px;
+        }
+        a:nth-of-type(2) {
+          position: absolute;
+          left: 20px;
+          top: 20px;
+          display: block;
+          width: 50px;
+          height: 50px;
+          background: url("../imgs/flower-list/live.png") no-repeat;
+          background-size: 50px 50px;
+        }
+        a.active {
+          background: url("../imgs/flower-list/like.png") no-repeat;
+          background-size: 50px 50px;
+        }
+        p:nth-of-type(1) {
+          margin: 15px 15px 0;
+          span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          span:first-child {
+            font-size: 26px; /*px*/
+            line-height: 36px;
+          }
+          span:last-child {
+            font-size: 18px; /*px*/
+            line-height: 36px;
+          }
+        }
+        p:nth-of-type(2) {
+          margin: 10px 15px;
+          font-size: 18px; /*px*/
+        }
+        > span {
+          display: block;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 75px;
+          height: 75px;
+          background: url("../imgs/flower-list/car.png") no-repeat;
+          background-size: 75px 75px;
+        }
+      }
+    }
+    .sold-out {
+      li {
+        a:first-child {
+          position: relative;
+          &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            content: '';
+            display: block;
+            background-image: url(../../assets/imgs/guangfaInbox/soldout.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: rgba(0,0,0,.3);
+            background-size: 220px 140px;
+          }
+        }
+      }
+    }
+  }
+  .footer-content{
+    margin: 60px auto 0;
+    width: 670px;
+    height: 200px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#shade {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9995;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#shade .shade_shopping {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5.946667rem;
+  height: 3.813333rem;
+  z-index: 9999;
+  overflow: hidden;
+  margin-left: -2.973333rem;
+  margin-top: -1.906667rem;
+  border-radius: 0.106667rem;
+  border: 0.04rem solid #e7566d;
+}
+
+#shade .shade_shopping div {
+  width: 100%;
+  height: 2.8rem;
+  background: #ffffff;
+  border-radius: 0.106667rem 0.106667rem 0 0;
+}
+
+#shade .shade_shopping div span:first-child {
+  display: inline-block;
+  width: 1.146667rem;
+  height: 0.8rem;
+  background-size: 100% 100%;
+  margin-left: 0.733333rem;
+  margin-top: 1.066667rem;
+}
+
+#shade .shade_shopping div span:last-child {
+  display: inline-block;
+  width: 2.96rem;
+  margin-left: 0.333333rem;
+}
+
+#shade .shade_shopping a {
+  display: block;
+  float: left;
+  width: 2.973333rem;
+  height: 1.013333rem;
+  text-align: center;
+  line-height: 1.013333rem;
+  color: #fff;
+  background: #f1b4be;
+  font-size: 0.32rem;
+}
+
+#shade .shade_shopping a:last-child {
+  background: #e7566d;
+}
