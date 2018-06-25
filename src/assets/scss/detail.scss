@@ -310,6 +310,7 @@ $loc-triangle-bgcolor: #f0f0f0;
       }
     }
     .four_li, .five_li {
+      position: relative;
       .title {
         margin-left: 30px;
         font-weight: normal;
@@ -376,6 +377,7 @@ $loc-triangle-bgcolor: #f0f0f0;
         height: 50px;
         font-size: 0;
         margin-left: 10px;
+        border-bottom: none;
         .btn {
           width: 45px;
           height: 45px;
@@ -407,6 +409,14 @@ $loc-triangle-bgcolor: #f0f0f0;
           left: 0;
           top: 20px;
         }
+      }
+      .check-detail{
+        position: absolute;
+        color: #dd5e6e;
+        font-size: 18px;
+        text-decoration: underline;
+        bottom: 10px;
+        left: 42%;
       }
     }
     .last_li {
@@ -1087,6 +1097,87 @@ $loc-triangle-bgcolor: #f0f0f0;
     &.exchange {
       color: #fff;
       background: #f94f42;
+    }
+  }
+}
+.jiajia-detail{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 10000;
+  display: none;
+  .jiajia-content{
+    position: absolute;
+    width: 670px;
+    background: #fff;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    //top: 35%;
+    .img{
+      width: 550px;
+      height: 550px;
+      margin: 80px auto 0;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .information{
+      width: 450px;
+      margin: 0 auto;
+      .name{
+        color: #dd3f3a;
+        font-size: 22px;
+        line-height: 80px;
+        border-bottom: 2px dashed #dd3f3a;
+        font-weight: normal;
+        text-align: center;
+      }
+      .desc{
+        padding-left: 90px;
+        padding-top: 40px;
+        list-style: none;
+        li{
+          font-size: 22px;
+          line-height: 38px;
+          color: #aca7a6;
+        }
+      }
+    }
+    .maintenance{
+      width: 450px;
+      margin: 0 auto;
+      .title{
+        font-size: 22px;
+        line-height: 80px;
+        border-bottom: 2px dashed #aca7a6;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      p{
+        padding-left: 40px;
+        font-size: 22px;
+        line-height: 38px;
+        color: #aca7a6;
+        &:last-child{
+          padding-bottom: 60px;
+        }
+      }
+    }
+    .close-jiajiaDetail{
+      position: absolute;
+      display: block;
+      width: 45px;
+      height: 45px;
+      right: 20px;
+      top: 20px;
+      background: url("./../../assets/imgs/detail/jiajia-close.png") no-repeat;
+      background-size: 45px 45px;
     }
   }
 }

@@ -41,7 +41,6 @@
             }
         });
 
-
         //数量增加减少
         (function () {
             var $add = $(".add"),
@@ -144,6 +143,42 @@
             }
             $(this).siblings('.jiajia-num').html(jiajiaNum);
         })
+        /*加价购详情初始化*/
+        jiajiaDetail();
 
+        /*点击按钮，详情打开*/
+        $('.four_li .open-detail').click(function () {
+            $('#jiajiaDetail').fadeIn(300);
+        })
+        $('#jiajiaDetail .close-jiajiaDetail').click(function () {
+            $(this).parent().parent().fadeOut(300);
+        })
     });
+
+    /*加价购详情*/
+    function jiajiaDetail() {
+
+        var data = {
+                list: [
+                    {
+                        imgUrl: './assets/imgs/detail/jiajia-img.png',
+                        product: {
+                            name: '商品名称',
+                            detail1: '花材数量：9枝',
+                            detail2: '花材品质：A级玫瑰',
+                            detail3: '花盒尺寸：22*30*22cm'
+                        },
+                        maintenance: {
+                            name: '养护',
+                            maintain1: '玫瑰由花泥保鲜',
+                            maintain2: '可直接置于桌面摆放，无需剪枝打理',
+                            maintain3: '3~4天可浇水一次，延长花期',
+                        }
+                    }
+                ]
+            }
+        ;
+        var _html = template('tplJiaJia',data);
+        $('#jiajiaDetail').html(_html);
+    }
 })(jQuery, window, document);

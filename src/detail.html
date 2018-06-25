@@ -115,7 +115,7 @@
             <li class="four_li">
                 <h4 class="title">加价购</h4>
                 <div>
-                    <a href="javascript:;"><img src="assets/imgs/detail/cake.png"/></a>
+                    <a href="javascript:;" class="open-detail"><img src="assets/imgs/detail/cake.png"/></a>
                     <p>甜爱物语 - 加30元可获得，加30元可获得</p>
                     <span class="cost" data-price="40"><span>￥</span><span class="total">40</span></span>
                     <div class="operators">
@@ -127,9 +127,10 @@
                             <img src="./assets/imgs/detail/btn_add.png" alt="">
                         </span>
                     </div>
+                    <a href="javascript:;" class="check-detail open-detail">查看详情</a>
                 </div>
                 <div>
-                    <a href="javascript:;"><img src="assets/imgs/detail/cake.png"/></a>
+                    <a href="javascript:;" class="open-detail"><img src="assets/imgs/detail/cake.png"/></a>
                     <p>甜爱物语 - 加30元可获得，加30元可获得</p>
                     <span class="cost" data-price="30"><span>￥</span><span class="total">30</span></span>
                     <div class="operators">
@@ -141,9 +142,10 @@
                             <img src="./assets/imgs/detail/btn_add.png" alt="">
                         </span>
                     </div>
+                    <a href="javascript:;" class="check-detail open-detail">查看详情</a>
                 </div>
                 <div>
-                    <a href="javascript:;"><img src="assets/imgs/detail/cake.png"/></a>
+                    <a href="javascript:;" class="open-detail"><img src="assets/imgs/detail/cake.png"/></a>
                     <p>甜爱物语 - 加30元可获得，加30元可获得</p>
                     <span class="cost" data-price="40"><span>￥</span><span class="total">40</span></span>
                     <div class="operators">
@@ -155,9 +157,10 @@
                             <img src="./assets/imgs/detail/btn_add.png" alt="">
                         </span>
                     </div>
+                    <a href="javascript:;" class="check-detail open-detail">查看详情</a>
                 </div>
                 <div>
-                    <a href="javascript:;"><img src="assets/imgs/detail/cake.png"/></a>
+                    <a href="javascript:;" class="open-detail"><img src="assets/imgs/detail/cake.png"/></a>
                     <p>甜爱物语 - 加30元可获得，加30元可获得</p>
                     <span class="cost" data-price="30"><span>￥</span><span class="total">30</span></span>
                     <div class="operators">
@@ -169,6 +172,7 @@
                             <img src="./assets/imgs/detail/btn_add.png" alt="">
                         </span>
                     </div>
+                    <a href="javascript:;" class="check-detail open-detail">查看详情</a>
                 </div>
             </li>
             <li class="three_li">
@@ -181,7 +185,32 @@
             </li>
         </ul>
     </div>
-
+    <div class="jiajia-detail" id="jiajiaDetail">
+        <script id="tplJiaJia" type="text/html">
+            {{each list as item i}}
+        <div class="jiajia-content">
+            <div class="img">
+                <img src="{{item.imgUrl}}" alt="">
+            </div>
+            <div class="information">
+                <h3 class="name">{{item.product.name}}</h3>
+                <ul class="desc">
+                    <li>{{item.product.detail1}}</li>
+                    <li>{{item.product.detail2}}</li>
+                    <li>{{item.product.detail3}}</li>
+                </ul>
+            </div>
+            <div class="maintenance">
+                <h3 class="title">{{item.maintenance.name}}</h3>
+                <p>{{item.maintenance.maintain1}}</p>
+                <p>{{item.maintenance.maintain2}}</p>
+                <p>{{item.maintenance.maintain3}}</p>
+            </div>
+            <a href="javascript:;" class="close-jiajiaDetail"></a>
+        </div>
+            {{/each}}
+        </script>
+    </div>
     <div class="section">
         <img src="assets/imgs/detail/section-bg.png"/>
     </div>
