@@ -354,6 +354,16 @@ $loc-triangle-bgcolor: #f0f0f0;
           font-size: 30px;
         }
       }
+      .oldPrice{
+        position: absolute;
+        font-size: 20px;
+        line-height: 20px;
+        color: #bfbebe;
+        text-decoration: line-through;
+        right: 17%;
+        bottom: 10px;
+
+      }
       .like {
         display: block;
         position: absolute;

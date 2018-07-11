@@ -11,7 +11,7 @@ img {
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
-  background-color: #f2fcfe;
+  background: url("./../../assets/imgs/szone/bg.png");
 }
 
 .szone-banner {
@@ -48,7 +48,7 @@ img {
         li{
           font-size: 26px;
           line-height: 50px;
-          color: #85dceb;
+          color: #7a3621;
           font-weight: 600;
           span{
             display: inline-block;
@@ -66,7 +66,7 @@ img {
         margin: 20px 0;
         font-size: 28px;
         line-height: 50px;
-        color: #85dceb;
+        color: #7a3621;
         font-weight: 600;
         i{
           font-weight: 700;
@@ -289,13 +289,13 @@ img {
 
 .szone-rule {
   width: 750px;
-  background-color: #daf8fd;
+  background-color: #65c3f3;
   margin: 0 auto;
   dl {
     width: 710px;
     margin: 0 auto;
     padding: 50px 0;
-    color: #28aec4;
+    color: #fff;
   }
 
   dt {
