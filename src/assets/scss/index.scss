@@ -249,6 +249,20 @@ $loc-triangle-bgcolor: #f0f0f0;
     }
 }
 
+.service-tel{
+    margin: 20px 13px 0 13px;
+    height: 55px;
+    background: linear-gradient(to bottom,#f8f8f9,#fff);
+    border-radius: 10px 10px 0 0;
+    p{
+        text-align: right;
+        font-size: 22px;
+        line-height: 55px;
+        color: #b4b4b4;
+        padding-right: 50px;
+    }
+}
+
 #idscreen {
     margin: 0 auto;
     width: 710px;
@@ -334,7 +348,7 @@ $loc-triangle-bgcolor: #f0f0f0;
 }
 
 #main {
-    margin: 45px auto 0;
+    margin: 0 auto;
     width: 720px;
     .box-left {
         width: 350px;
@@ -1230,4 +1244,8 @@ $loc-triangle-bgcolor: #f0f0f0;
             padding-bottom: 15px;
         }
     }
+}
+
+#baidu img{
+    display: none;
 }
