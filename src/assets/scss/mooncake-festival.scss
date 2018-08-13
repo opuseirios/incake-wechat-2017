@@ -1,0 +1,62 @@
+ul,li{
+  list-style: none;
+}
+img{
+  vertical-align: top;
+  border: none;
+}
+
+.mooncake-page{
+  width: 100%;
+  max-width: 750px;
+  height: 3324px;
+  background-size: 750px 3324px;
+  background-image: url('./../imgs/mooncake-festival/bg1.png');
+  margin: 0 auto;
+  position: relative;
+}
+.top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 533px;
+  background-size: 100% 533px;
+  background-image: url('./../imgs/mooncake-festival/top.png');
+}
+.mooncake-content{
+  padding-top: 560px;
+  .txt1{
+    width: 100%;
+    height: 566px;
+    background-size: 100%  566px;
+    background-image: url('./../imgs/mooncake-festival/txt1.png');
+  }
+  .txt2{
+    width: 100%;
+    height: 595px;
+    background-size: 100%  595px;
+    background-image: url('./../imgs/mooncake-festival/txt2.png');
+  }
+  .cake1{
+    margin-top: 125px;
+    margin-bottom: 110px;
+    a{
+      display: block;
+      width: 100%;
+      height: 447px;
+      background-size: 100% 447px;
+      background-image: url('./../imgs/mooncake-festival/cake1.png');
+    }
+  }
+  .cake2{
+    margin-top: 150px;
+    a{
+      display: block;
+      width: 100%;
+      height: 575px;
+      background-size: 100% 575px;
+      background-image: url('./../imgs/mooncake-festival/cake2.png');
+    }
+  }
+}
