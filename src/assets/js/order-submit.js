@@ -571,6 +571,7 @@
         $oBtnPayment.on('tap click', function () {
 
             var paytype = $(this).attr('paytype');
+            console.log(paytype);
             $oPaymentAction.find('.list').children('li')
                 .filter('li[paytype="' + paytype + '"]')
                 .addClass('active').siblings().removeClass('active');

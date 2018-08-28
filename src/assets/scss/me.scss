@@ -29,6 +29,15 @@ body{
             position: relative;
             margin-left: 100px;
         }
+        .icon-douli{
+            position: absolute;
+            right: -35px;
+            width: 25px;
+            height: 25px;
+            background-size: 25px 25px;
+            display: inline-block;
+            background-image: url(./../imgs/me/dou-logo.png);
+        }
         div:first-child{
 
             margin-top: 50px;

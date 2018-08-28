@@ -1191,3 +1191,20 @@ $loc-triangle-bgcolor: #f0f0f0;
     }
   }
 }
+
+
+/*兜礼text*/
+.dou-text{
+  width: 100%;
+  height: 27px;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  img{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 225px;
+    height: 27px;
+  }
+}

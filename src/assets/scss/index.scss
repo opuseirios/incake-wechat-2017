@@ -397,6 +397,16 @@ $loc-triangle-bgcolor: #f0f0f0;
                 height: 140px;
                 margin-left: 10px;
                 position: relative;
+                .icon-douli{
+                    position: absolute;
+                    display: inline-block;
+                    right: 20px;
+                    top: 0;
+                    width: 25px;
+                    height: 25px;
+                    background-size: 25px 25px;
+                    background-image: url('./../imgs/me/dou-logo.png');
+                }
                 p {
                     margin: 0;
                     padding: 0;
@@ -509,6 +519,17 @@ $loc-triangle-bgcolor: #f0f0f0;
                 height: 140px;
                 margin-left: 10px;
                 position: relative;
+                /*兜礼logo*/
+                .icon-douli{
+                    position: absolute;
+                    display: inline-block;
+                    right: 20px;
+                    top: 0;
+                    width: 25px;
+                    height: 25px;
+                    background-size: 25px 25px;
+                    background-image: url('./../imgs/me/dou-logo.png');
+                }
                 p {
                     margin: 0;
                     padding: 0;

@@ -45,7 +45,18 @@ html,body{
             li{
                 position: relative;
                 border: 1px solid #dcdcdc;
-                height: 220px;
+                height: 275px;
+                .douli-text{
+                    position: absolute;
+                    left: 220px;
+                    bottom: 35px;
+                    width: 255px;
+                    height: 27px;
+                    img{
+                        width: 255px;
+                        height: 27px;
+                    }
+                }
                 >a:nth-of-type(1){
                     position: relative;
                     top: 31px;
