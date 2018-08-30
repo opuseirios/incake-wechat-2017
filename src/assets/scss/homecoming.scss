@@ -1,0 +1,180 @@
+.homecoming-page{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 750px;
+  height: 3760px;
+  background: url("./../imgs/homecoming/bg.png");
+  background-size: 750px 3760px;
+  background-repeat: no-repeat;
+}
+
+.homecoming-banner{
+  padding-top: 110px;
+  text-align: center;
+  img{
+    width: 735px;
+    height: 410px;
+  }
+}
+
+.homecoming-container{
+  width: 100%;
+  .cake-container{
+    width: 100%;
+    height: 680px;
+    position: relative;
+    margin-bottom: 10px;
+    background-size: 100% 680px;
+    .content{
+      width: 190px;
+      height: 160px;
+      position: absolute;
+      .name{
+        font-size: 28px;
+        color: #ff829f;
+        font-weight: 600;
+      }
+      .oldPrice{
+        padding-top: 16px;
+        font-size: 14px;
+        color: #434343;
+        text-decoration: line-through;
+      }
+      .nowPrice{
+        padding-top: 8px;
+        font-size: 18px;
+        color: #ff829f;
+        font-weight: 600;
+        .price{
+          font-style: normal;
+          font-size: 32px;
+        }
+      }
+      .buyNow{
+        display: block;
+        margin: 18px auto 0;
+        width: 155px;
+        height: 36px;
+        border-radius: 18px;
+        background: #ff829f;
+        text-align: center;
+        line-height: 36px;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+    .info{
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 20px;
+    }
+    .img{
+      position: absolute;
+      .img-btn{
+        display: block;
+      }
+    }
+    &.cake1{
+      background-image: url('./../imgs/homecoming/cake_bg1.png');
+      .content{
+        left: 75px;
+        top: 335px;
+      }
+      .img{
+        width: 428px;
+        height: 294px;
+        left: 270px;
+        top: 270px;
+      }
+    }
+    &.cake2{
+      background-image: url('./../imgs/homecoming/cake_bg2.png');
+      .content{
+        right: 70px;
+        top: 300px;
+      }
+      .img{
+        width: 445px;
+        height: 325px;
+        left: 55px;
+        top: 270px;
+      }
+    }
+    &.cake3{
+      background-image: url('./../imgs/homecoming/cake_bg3.png');
+      .content{
+        left: 60px;
+        top: 90px;
+      }
+      .img{
+        width: 415px;
+        height: 308px;
+        left: 260px;
+        top: 65px;
+      }
+    }
+    &.cake4{
+      background-image: url('./../imgs/homecoming/cake_bg4.png');
+      .cake-wrapper1{
+        .content{
+          right: 100px;
+          top: 125px;
+
+        }
+        .img{
+          width: 370px;
+          height: 270px;
+          left: 50px;
+          top: 110px;
+          .txt1{
+            position: absolute;
+            width: 122px;
+            height: 63px;
+            top: 10px;
+            right: -25px;
+          }
+        }
+      }
+      .cake-wrapper2{
+        .content{
+          left: 100px;
+          top: 440px;
+        }
+        .img{
+          width: 373px;
+          height: 256px;
+          right: 44px;
+          top: 380px;
+          .txt2{
+            position: absolute;
+            width: 124px;
+            height: 55px;
+            top: 60px;
+            left: -50px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.homecoming-rule{
+  padding-top: 230px;
+  width: 100%;
+  dl{
+    color: #262a24;
+    dt{
+      font-size: 22px;
+      text-align: center;
+      line-height: 80px;
+    }
+    dd{
+      width: 600px;
+      font-size: 20px;
+      line-height: 40px;
+      margin: 0 auto;
+    }
+  }
+}
